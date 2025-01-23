@@ -1,0 +1,50 @@
+.assigned-headhunter {
+    border-radius: 4px;
+    border-top: 4px solid #0D85FE;
+    background: var(--text-icon-primary-white, #FFF);
+
+/* Elevation/200 */
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+}
+
+.ah_header>h4 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Headline/300/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 120% */
+    letter-spacing: -0.2px;
+    margin-bottom: 0;
+}
+
+.ah_header {
+    margin-bottom: 16px;
+}
+
+.ah_wrapers {
+    text-align: center;
+}
+
+.ah_footers>h4 {
+    color: var(--text-icon-disabled-black, rgba(29, 36, 51, 0.56));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 0;
+}
+
+.ah_footers {
+    margin-top: 16px;
+}

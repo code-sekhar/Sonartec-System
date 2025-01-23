@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/helvetica-now-mt-micro');
+body{
+    font-family: 'Helvetica Now MT Micro', sans-serif !important;
+    font-family: 'Helvetica Now MT Text', sans-serif ;
+    font-family: 'Helvetica Now MT Disp', sans-serif ;
+}
+:root {
+    --primary-color: #F2F4F7;
+    --secondary-color: #FFF;
+    --primary-text-color:#000;
+    --yellow-color: #FBBF23;
+    --black-color: #1D2433;
+    --bg-yellow: #FBBF23;
+    --gray-color: #c1bfbf;
+    --dashboard-black-color:#1B1F27;
+
+}
+/*calender*/
+.ant-picker-calendar-date.ant-picker-cell-inner {
+    display: flex !important;
+    width: 30.889px !important;
+    height: 29.478px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-shrink: 0;
+    border-top: none !important;
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/300/Light */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.06px;
+    border-radius: 100px;
+}
+.ant-picker-calendar-date.ant-picker-cell-inner.ant-picker-calendar-date-today {
+    border-radius: 100px !important;
+    background: var(--Yellow-700, #FBBF23) !important;
+    color: var(--text-icon-primary-white, #FFF) !important;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/300/Heavy */
+    font-family: Inter;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.06px;
+}
+
+.ant-picker-calendar-date.ant-picker-cell-inner.ant-picker-calendar-date-today>.ant-picker-calendar-date-value {
+    color: #fff !important;
+}
+.ant-picker-calendar-date.ant-picker-cell-inner {
+    border-radius: 100px !important;
+}
+
+nz-select-top-control.ant-select-selector {
+    border-radius: 6px !important;
+    border: 1px solid var(--Color-Neutral-300, #DBDFE7) !important;
+    background: var(--text-icon-primary-white, #FFF);
+}
+
+span.ant-radio-button.ant-radio-button-checked {
+    border-radius: 4px !important;
+    border: 1px solid var(--Neutral-300, #DBDFE7) !important;
+    background: var(--Neutral-0, #FFF) !important;
+}
+
+label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+    border-radius: 4px;
+    border: 0px solid var(--Neutral-300, #DBDFE7) !important;
+    background: var(--Neutral-0, #FFF);
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Light */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 20px; */ /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-right: 10px;
+}
+
+label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+    border-radius: 8px;
+}
+canvas {
+    width: 100% !important; /* Ensures canvas takes full width of its container */
+    height: 400px I !important; /* Adjusts height automatically */
+  }

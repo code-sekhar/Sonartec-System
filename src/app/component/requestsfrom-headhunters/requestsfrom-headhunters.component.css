@@ -1,0 +1,131 @@
+.requestsfrom-headhunters-header>h3 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Headline/300/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.2px;
+    margin-bottom: 0;
+}
+
+.requestsfrom-headhunters-header {
+    margin-bottom: 16px;
+}
+
+.requestsfrom-head>h4 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/100/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.08px;
+    margin-bottom: 0;
+}
+
+.rc_item>h4 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.07px;
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.rc_item>h3 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 0;
+}
+
+.rc_item {
+    padding: 8px 0px;
+    border-bottom: 1px solid #DBDFE7;
+}
+
+.requestsfrom-headhunters-items {
+    border-radius: 4px;
+    background: var(--Neutral-100, #F2F4F7);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+button.dc_buttons {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--text-icon-primary-white, #FFF);
+    padding: 9px 12px;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/200 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: -0.07px;
+    width: 98%;
+}
+
+button.ac_buttons {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    padding: 9px 12px;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/200 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: -0.07px;
+    border: none;
+    width: 98%;
+}
+
+.rc_item.border_none{
+    border-bottom: none;
+}
+.rc_btn_wrapers {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 8px;
+}
+.requestsfrom-headhunters {
+    border-radius: 4px;
+    border-top: 4px solid #F65656;
+    background: var(--text-icon-primary-white, #FFF);
+
+/* Elevation/200 */
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+    margin-top: 20px;
+}
+.requestsfrom-headhunters-items {
+    margin-bottom: 8px;
+}

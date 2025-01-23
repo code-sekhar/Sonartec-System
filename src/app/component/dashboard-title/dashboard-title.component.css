@@ -1,0 +1,13 @@
+.heading>h2{
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Headline/100/Heavy */
+    font-family: "Helvetica Now MT Text";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.64px;
+    margin-bottom: 0px;
+}

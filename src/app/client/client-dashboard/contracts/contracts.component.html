@@ -1,0 +1,736 @@
+<div class="dash_board_wrapers">
+    <dashboard-title [text]="interviews" ></dashboard-title>
+    <!-------------------------next wraper sections---------------------->
+    <div class="next_dashboard_wrapers">
+        <div class="search_sections">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wraper-filter-areas">
+                            <div  class="filter_search">
+                               <span >
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                     <path d="M12.6 13.5333L8.86667 9.8C8.53333 10.0667 8.15 10.2778 7.71667 10.4333C7.28333 10.5889 6.82222 10.6667 6.33333 10.6667C5.12222 10.6667 4.09733 10.2473 3.25867 9.40867C2.41956 8.56956 2 7.54444 2 6.33333C2 5.12222 2.41956 4.09711 3.25867 3.258C4.09733 2.41933 5.12222 2 6.33333 2C7.54444 2 8.56956 2.41933 9.40867 3.258C10.2473 4.09711 10.6667 5.12222 10.6667 6.33333C10.6667 6.82222 10.5889 7.28333 10.4333 7.71667C10.2778 8.15 10.0667 8.53333 9.8 8.86667L13.55 12.6167C13.6722 12.7389 13.7333 12.8889 13.7333 13.0667C13.7333 13.2444 13.6667 13.4 13.5333 13.5333C13.4111 13.6556 13.2556 13.7167 13.0667 13.7167C12.8778 13.7167 12.7222 13.6556 12.6 13.5333ZM6.33333 9.33333C7.16667 9.33333 7.87511 9.04178 8.45867 8.45867C9.04178 7.87511 9.33333 7.16667 9.33333 6.33333C9.33333 5.5 9.04178 4.79156 8.45867 4.208C7.87511 3.62489 7.16667 3.33333 6.33333 3.33333C5.5 3.33333 4.79156 3.62489 4.208 4.208C3.62489 4.79156 3.33333 5.5 3.33333 6.33333C3.33333 7.16667 3.62489 7.87511 4.208 8.45867C4.79156 9.04178 5.5 9.33333 6.33333 9.33333Z" fill="#1D2433" fill-opacity="0.8"></path>
+                                  </svg>
+                               </span>
+                               <div class="search_fields"><input type="text" placeholder="Search"></div>
+                            </div>
+                            <div class="filter_drop_down">
+                               <select name="" id="" class="form-select">
+                                  <option value="">Search</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                               </select>
+                            </div>
+                            <div class="filter_drop_down">
+                               <select name="" id="" class="form-select">
+                                  <option value="">Candidate Name</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                               </select>
+                            </div>
+                            <div class="filter_drop_down">
+                               <select name="" id="" class="form-select">
+                                  <option value="">Headhunter</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                                  <option value="">All</option>
+                               </select>
+                            </div>
+                            <div class="filter_drop_down">
+                                <select name="" id="" class="form-select">
+                                   <option value="">Status</option>
+                                   <option value="">All</option>
+                                   <option value="">All</option>
+                                   <option value="">All</option>
+                                   <option value="">All</option>
+                                </select>
+                             </div>
+                         </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!----------------next calender sections------------------->
+        <div class="next_calender_sections">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-12">
+                        <div class="main_calender">
+                            <custom-calender></custom-calender>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-12 pb-5">
+                        <!---------------------ToDay section---------------------->
+                        <div class="main_request_wrapers">
+                            <div class="today_card_box">
+                                <div class="today_headers">
+                                    <div class="left_column d-flex align-items-center">
+                                        <h4> Today - 12/12/2024</h4>
+                                        <button>
+                                            5  Contracts
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_request_wrapers">
+                            <div class="today_card_box">
+                                <div class="today_headers">
+                                    <div class="left_column d-flex align-items-center">
+                                        <h4>Thursday - 11/12/2024</h4>
+                                        <button>
+                                            5  Contracts
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_request_wrapers">
+                            <div class="today_card_box">
+                                <div class="today_headers">
+                                    <div class="left_column d-flex align-items-center">
+                                        <h4>Wednesday  - 10/12/2024</h4>
+                                        <button>
+                                            5  Contracts
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                                <!--------------------------faq_table------------------>
+                                <div class="faq_table">
+                                    <div class="faq_table_item">
+                                        <div class="main_table_header d-flex align-items-center justify-content-between">
+                                            <div class="left_column d-flex align-items-center">
+                                                <h4>Senior Product Designer</h4>
+                                            </div>
+                                            <div class="right_column">
+                                                <span class="mtc_icons">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M9.6998 17.2998C9.51647 17.1165 9.4248 16.8831 9.4248 16.5998C9.4248 16.3165 9.51647 16.0831 9.6998 15.8998L13.5998 11.9998L9.6998 8.0998C9.51647 7.91647 9.4248 7.68314 9.4248 7.3998C9.4248 7.11647 9.51647 6.88314 9.6998 6.6998C9.88314 6.51647 10.1165 6.4248 10.3998 6.4248C10.6831 6.4248 10.9165 6.51647 11.0998 6.6998L15.6998 11.2998C15.7998 11.3998 15.8708 11.5081 15.9128 11.6248C15.9541 11.7415 15.9748 11.8665 15.9748 11.9998C15.9748 12.1331 15.9541 12.2581 15.9128 12.3748C15.8708 12.4915 15.7998 12.5998 15.6998 12.6998L11.0998 17.2998C10.9165 17.4831 10.6831 17.5748 10.3998 17.5748C10.1165 17.5748 9.88314 17.4831 9.6998 17.2998Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                      </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-----------------------------------table-content------------------>
+                                        <div class="table_content"  >
+                                            <div class="container-cs">
+                                                <div class="row_cs">
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Contract ID</h3>
+                                                            <h4>
+                                                                CON12345
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Candidate</h3>
+                                                            <h4>
+                                                                Sarah Tran
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Satus</h3>
+                                                            <div class="status_box">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                                                        <ellipse cx="6.2002" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                                                                      </svg>
+                                                                </span>
+                                                                Signed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Date Created</h3>
+                                                            <h4>
+                                                                07/12/2024
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column_3">
+                                                        <div class="table_column_wraper">
+                                                            <h3>Salary</h3>
+                                                            <h4>
+                                                                $10,000
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button_rows">
+                                                    <button class="download_btn">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                                                                <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62598 0V5.27586H13.7309L8.62598 0Z" fill="white"/>
+                                                                <path d="M2.87329 13.4304V10.1426H4.2721C4.61843 10.1426 4.8928 10.237 5.09969 10.4304C5.30658 10.6193 5.41004 10.8757 5.41004 11.1951C5.41004 11.5144 5.30658 11.7708 5.09969 11.9597C4.8928 12.1531 4.61843 12.2475 4.2721 12.2475H3.71437V13.4304H2.87329ZM3.71437 11.5324H4.17764C4.30357 11.5324 4.40253 11.5054 4.47001 11.4425C4.53746 11.384 4.57346 11.303 4.57346 11.1951C4.57346 11.0871 4.53748 11.0062 4.47001 10.9477C4.40255 10.8847 4.3036 10.8578 4.17764 10.8578H3.71437V11.5324ZM5.75635 13.4304V10.1426H6.92126C7.15065 10.1426 7.36655 10.1741 7.56894 10.2415C7.77133 10.309 7.95575 10.4035 8.11766 10.5339C8.27959 10.6598 8.41002 10.8307 8.50447 11.0466C8.59442 11.2625 8.64391 11.5099 8.64391 11.7888C8.64391 12.0631 8.59444 12.3105 8.50447 12.5264C8.41002 12.7423 8.27959 12.9132 8.11766 13.0391C7.95573 13.1696 7.77133 13.264 7.56894 13.3315C7.36655 13.3989 7.15065 13.4304 6.92126 13.4304H5.75635ZM6.57944 12.7153H6.82231C6.95274 12.7153 7.07419 12.7018 7.18663 12.6703C7.29457 12.6388 7.39802 12.5894 7.49698 12.5219C7.59143 12.4544 7.66789 12.36 7.72186 12.234C7.77583 12.1081 7.80283 11.9597 7.80283 11.7888C7.80283 11.6133 7.77583 11.4649 7.72186 11.339C7.66789 11.2131 7.59143 11.1186 7.49698 11.0511C7.39802 10.9837 7.29459 10.9342 7.18663 10.9027C7.07419 10.8712 6.95274 10.8577 6.82231 10.8577H6.57944V12.7153ZM9.0667 13.4304V10.1426H11.4055V10.8577H9.90778V11.384H11.1042V12.0946H9.90778V13.4304H9.0667Z" fill="white"/>
+                                                              </svg>
+                                                        </span> 
+                                                        Download PDF
+                                                    </button>
+                                                    <button class="view_contract">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <mask id="mask0_373_19222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                                  <rect width="12" height="12" fill="#D9D9D9"/>
+                                                                </mask>
+                                                                <g mask="url(#mask0_373_19222)">
+                                                                  <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                                </g>
+                                                              </svg>
+                                                        </span>
+                                                        View Contract
+                                                    </button>
+                                                    <button class="send_review">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M1.7 10.2003L10.425 6.46025C10.83 6.28525 10.83 5.71525 10.425 5.54025L1.7 1.80025C1.37 1.65525 1.005 1.90025 1.005 2.25525L1 4.56025C1 4.81025 1.185 5.02525 1.435 5.05525L8.5 6.00025L1.435 6.94025C1.185 6.97525 1 7.19025 1 7.44025L1.005 9.74525C1.005 10.1003 1.37 10.3453 1.7 10.2003Z" fill="#1D2433"/>
+                                                              </svg>
+                                                        </span>
+                                                        Send Back for Review
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <!-----------------------------------table-content------------------>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

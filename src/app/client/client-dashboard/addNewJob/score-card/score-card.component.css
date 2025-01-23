@@ -1,0 +1,123 @@
+.job_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job_column_wrapers {
+    position: relative;
+}
+
+.step_label {
+    position: absolute;
+}
+
+span.jb_step_title {
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 0;
+}
+
+span.jb_step_number {
+    border-radius: 1000px;
+    background: var(--Yellow-700, #FBBF23);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/300/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.06px;
+}
+
+.step_label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-left: 32px;
+    height: 100%;
+}
+.jb_step_column:first-child .step_label{
+    padding-left: 16px;
+}
+.job_header_wrapers {
+    border-bottom: 1px solid var(--Neutral-300, #DBDFE7);
+    padding: 24px;
+}
+
+.main_job_section {
+    border-radius: 4px;
+    background: var(--text-icon-primary-white, #FFF);
+
+/* Elevation/200 */
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    padding-bottom: 45px;
+}
+
+
+.job_content_form_box {
+    padding: 24px;
+}
+
+.main_job_section {
+    margin-top: 24px;
+}
+
+input,textarea{
+    outline: none;
+}
+/*next score*/
+.skill_item>label {
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 8px;
+}
+
+.progress.custom_controll_pr.purple>.progress-bar {
+    border-radius: 8px;
+    background: #7E55D7;
+}
+
+.progress.custom_controll_pr.red>.progress-bar {
+    border-radius: 8px;
+    background: #F65656;
+}
+.skill_item {
+    margin-bottom: 16px;
+}
+.skill_item:last-child {
+    margin-bottom: 0px;
+}
+.skill_wrapers {
+    padding: 24px;
+    padding-bottom: 0px;
+}
+.jb_step_number.green_box{
+    border-radius: 1000px;
+background: var(--Green-700, #16A161);
+}

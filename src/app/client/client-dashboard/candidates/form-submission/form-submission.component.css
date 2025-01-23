@@ -1,0 +1,116 @@
+.item_column>h4 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 4px;
+}
+
+.item_column>p {
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 142.857% */
+    letter-spacing: -0.07px;
+    margin-bottom: 0;
+}
+
+button.edit_buttons {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+.form_su_items {
+    border-bottom: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-100, #F2F4F7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    margin-top: 16px;
+}
+.headings_fields>h4 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/100/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 150% */
+    letter-spacing: -0.08px;
+    margin-bottom: 0;
+}
+
+.headings_fields {
+    margin-bottom: 16px;
+}
+
+.document {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 142.857% */
+    letter-spacing: -0.07px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.down_load_btns>button {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: #FFF;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.downlosd_column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner_additionalDocuments {
+    border-radius: 4px;
+    border-top: 4px solid var(--Purple-700, #8B2CE9);
+    background: var(--text-icon-primary-white, #FFF);
+
+/* Elevation/200 */
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    padding: 24px;
+}
+
+.down_load_item {
+    margin-bottom: 12px;
+}
+
+.additionalDocuments {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

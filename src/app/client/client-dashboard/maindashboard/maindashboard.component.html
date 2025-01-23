@@ -1,0 +1,26 @@
+<div class="dash_board_wrapers">
+    <dashboard-title [text]="headingText" ></dashboard-title>
+    <dashboard-score></dashboard-score>
+    .<!-------------------------next wraper sections---------------------->
+    <div class="next_dashboard_wrapers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="wraper">
+                        <hiring-pipeline></hiring-pipeline>
+                        <recruitment-performance></recruitment-performance>
+                        <job-overview></job-overview>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="schdule">
+                        <schedule></schedule>
+                    </div>
+                    <div class="pending-action">
+                        <pending-action></pending-action>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

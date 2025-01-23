@@ -1,0 +1,18 @@
+<div class="schedule-container p-3">
+    <!-- Schedule Header -->
+    <div class="schedule-header ">
+      <h4>Schedule</h4>
+      <p> Friday, December 07, 2024</p>
+    </div>
+  
+    <!-- Calendar -->
+    <div class="calendar mb-4">
+        <!-- NG-ZORRO Calendar -->
+        <nz-calendar
+          [(nzValue)]="selectedDate"
+          [nzMode]="'month'"
+          (nzPanelChange)="onPanelChange($event)"
+        ></nz-calendar>
+      </div>
+  </div>
+  
