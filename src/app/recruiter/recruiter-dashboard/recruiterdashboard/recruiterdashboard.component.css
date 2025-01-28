@@ -1,0 +1,34 @@
+.side_ber {
+    background: var(--dashboard-black-color);
+}
+.side_ber {
+    height: 100%;
+}
+.pl-0{
+    padding-left: 0px !important;
+}
+.left-right{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dash_board_wrapers {
+    padding: 20px 10px;
+}
+.main_body_sections{
+    padding: 20px;
+}
+.page_wraper {
+    height: 100%;
+}
+/* .height-100{
+    height: 100% !important;
+} */
+.main_body_sections {
+    height: 100vh;
+    overflow-y: scroll;
+}
+@media only screen and (max-width: 999px) and (min-width: 300px) {
+    .side_ber {
+        display: none;
+    }
+    }

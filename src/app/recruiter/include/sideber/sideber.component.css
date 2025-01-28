@@ -1,0 +1,107 @@
+
+.side_ber_logo {
+    display: flex;
+    height: 56px;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.side_ber_menu {
+    padding: 8px 16px;
+}
+
+.side_ber_menu>ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.side_ber_menu>ul>li>a {
+    display: flex;
+    padding: 10px 8px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+.side_ber_menu>ul>li>a.active {
+    border-radius: 8px;
+    background: var(--Yellow-700, #FBBF23);
+    color: #1b1f27;
+}
+.side_ber_menu>ul>li>a {
+    color: var(--text-icon-secondary-white, rgba(255, 255, 255, 0.75));
+    font-feature-settings: 'liga' off, 'clig' off;
+/* Paragraph/200/Light */
+    font-family: "Helvetica Now MT Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.07px;
+    text-decoration: none;
+}
+.profile_author_name>h4 {
+    color: var(--text-icon-disabled-white, rgba(255, 255, 255, 0.60));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/300/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 133.333% */
+    letter-spacing: -0.06px;
+}
+
+.profile_author_name>p {
+    color: var(--text-icon-disabled-white, rgba(255, 255, 255, 0.60));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/300/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    letter-spacing: -0.06px;
+    margin-bottom: 0;
+}
+
+.profile_author {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.profile_author {
+    padding: 0px 26px;
+    cursor: pointer;
+}
+.combo {
+   
+}
+
+/* .inner_sideber_section {
+    height: 100%;
+}
+
+.side_ber_section {
+    height: 100%;
+} */
+.inner_sideber_section {
+    position: relative;
+}
+
+.inner_sideber_section,.side_ber_section.height-100 {
+    height: 100%;
+}
+.profile_author {
+    position: absolute;
+    bottom: 21px;
+    width: 100%;
+}
+a.active>.sideber_icon svg path{
+    fill: #1b1f27;
+}

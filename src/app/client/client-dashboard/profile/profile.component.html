@@ -1,1 +1,287 @@
-<p>profile works!</p>
+<div class="detail-job-overview">
+    <div class="job_over_view_header">
+        <dashboard-title [text]="headingText" ></dashboard-title>
+    </div>
+    <!-------------------------job-tab-sections---------------------->
+    <div class="job_tab_sections">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-tab">
+                        <ul class="nav_list">
+                            <li class="nav-list-item">
+                                <a class="nav-link-item active" [ngClass]="{ hidden: !overviewisVisible }" (click)="overview()" >Personal Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-item"  [ngClass]="{ hidden: !candidatesisVisible }"  (click)="candidates()">Password</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_job_types">
+        <div class="over_view_job_type" [style.display]="overviewisVisible ? 'block' : 'none'">
+            <div class="container-fluid">
+                <div class="personalInformation">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="personalInformation_card">
+                                <div class="card_image_header">
+                                    <div class="profile_image_box">
+                                        <span class="profile_iamges">
+                                            <img src="assets/img/a8.png" alt="">
+                                        </span>
+                                        <div class="file_upload">
+                                            <input type="file">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13.3333 2.66732H11.2199L9.99992 1.33398H5.99992L4.77992 2.66732H2.66659C1.93325 2.66732 1.33325 3.26732 1.33325 4.00065V12.0007C1.33325 12.734 1.93325 13.334 2.66659 13.334H13.3333C14.0666 13.334 14.6666 12.734 14.6666 12.0007V4.00065C14.6666 3.26732 14.0666 2.66732 13.3333 2.66732ZM13.3333 12.0007H2.66659V4.00065H5.36659L6.58659 2.66732H9.41325L10.6333 4.00065H13.3333V12.0007ZM7.99992 4.66732C6.15992 4.66732 4.66659 6.16065 4.66659 8.00065C4.66659 9.84065 6.15992 11.334 7.99992 11.334C9.83992 11.334 11.3333 9.84065 11.3333 8.00065C11.3333 6.16065 9.83992 4.66732 7.99992 4.66732ZM7.99992 10.0007C6.89992 10.0007 5.99992 9.10065 5.99992 8.00065C5.99992 6.90065 6.89992 6.00065 7.99992 6.00065C9.09992 6.00065 9.99992 6.90065 9.99992 8.00065C9.99992 9.10065 9.09992 10.0007 7.99992 10.0007Z" fill="#1D2433"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_form">
+                                    <div class="input_row">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="input_fields">
+                                                        <label for="">First name</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input_fields">
+                                                        <label for="">Last name</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input_fields">
+                                                        <label for="">Email</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input_fields">
+                                                        <label for="">Location</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="button_wrapes">
+                                                        <button>
+                                                            Save
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------candidate-sections------------------>
+        <div class="candidate_sections" [style.display]="candidatesisVisible ? 'block' : 'none'">
+            <div class="container-fluid">
+                <div class="personalInformation">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="personalInformation_card">
+                                <div class="card_image_header">
+                                    <div class="profile_image_box">
+                                        <span class="profile_iamges">
+                                            <img src="assets/img/a8.png" alt="">
+                                        </span>
+                                        <div class="file_upload">
+                                            <input type="file">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13.3333 2.66732H11.2199L9.99992 1.33398H5.99992L4.77992 2.66732H2.66659C1.93325 2.66732 1.33325 3.26732 1.33325 4.00065V12.0007C1.33325 12.734 1.93325 13.334 2.66659 13.334H13.3333C14.0666 13.334 14.6666 12.734 14.6666 12.0007V4.00065C14.6666 3.26732 14.0666 2.66732 13.3333 2.66732ZM13.3333 12.0007H2.66659V4.00065H5.36659L6.58659 2.66732H9.41325L10.6333 4.00065H13.3333V12.0007ZM7.99992 4.66732C6.15992 4.66732 4.66659 6.16065 4.66659 8.00065C4.66659 9.84065 6.15992 11.334 7.99992 11.334C9.83992 11.334 11.3333 9.84065 11.3333 8.00065C11.3333 6.16065 9.83992 4.66732 7.99992 4.66732ZM7.99992 10.0007C6.89992 10.0007 5.99992 9.10065 5.99992 8.00065C5.99992 6.90065 6.89992 6.00065 7.99992 6.00065C9.09992 6.00065 9.99992 6.90065 9.99992 8.00065C9.99992 9.10065 9.09992 10.0007 7.99992 10.0007Z" fill="#1D2433"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_form">
+                                    <div class="input_row">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input_fields">
+                                                        <label for="">Old Password</label>
+                                                        <input type="text" class="form-control" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input_fields">
+                                                        <label for="">New password</label>
+                                                        <input type="text" class="form-control" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input_fields">
+                                                        <label for="">Confirm password</label>
+                                                        <input type="text" class="form-control" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="button_wrapes">
+                                                        <button>
+                                                            Save
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Senior Product Designer -->
+ <div class="candidare_slides_popup" *ngIf="this.slideOpen">
+    <div class="inner_popu_wrapers">
+        <div class="popup_main_haeders">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="user_dtls_wrapers">
+                            <div class="user_dtl">
+                                <div class="user_image">
+                                    <img src="assets/img/g.png" alt="" srcset="">
+                                </div>
+                                <div class="wrape_dtl_row">
+                                    <div class="dtl_columns">
+                                        <h4>
+                                            Sarah Tran
+                                        </h4>
+                                        <h5>
+                                            Applied at
+                                        </h5>
+                                        <h4 class="dates_of_opt">
+                                            13/12/2024
+                                        </h4>
+                                    </div>
+                                    <div class="dtl_columns">
+                                        <div class="det_sc_rows">
+                                            4.7 
+                                            <span class="start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99975 12.9524L12.1122 14.8349C12.6823 15.1799 13.3797 14.6699 13.2297 14.0249L12.4047 10.4849L15.1572 8.09995C15.6597 7.66495 15.3897 6.83995 14.7297 6.78745L11.1072 6.47995L9.68975 3.13495C9.43475 2.52745 8.56475 2.52745 8.30975 3.13495L6.89225 6.47245L3.26975 6.77995C2.60975 6.83245 2.33975 7.65745 2.84225 8.09245L5.59475 10.4774L4.76975 14.0174C4.61975 14.6624 5.31725 15.1724 5.88725 14.8274L8.99975 12.9524Z" fill="#FBBF23"/>
+                                                  </svg>
+                                            </span>
+                                            <span class="retings_label">
+                                                (10 review)
+                                            </span>
+                                            <div class="rating_badge">
+                                                <span>
+        
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <ellipse cx="8" cy="8" rx="4" ry="4" fill="white"/>
+                                                      </svg>
+                                                </span> 
+                                                Active
+                                            </div>
+                                        </div>
+                                        <h5>
+                                            Applied at
+                                        </h5>
+                                        <h4 class="dates_of_opt">
+                                            13/12/2024
+                                        </h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right_slide_buttons">
+                            <button class="deletes_sect">
+                                Reject
+                            </button>
+                            <button class="accept_sect">
+                                Approve
+                            </button>
+                            <button class="sent_sect">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M2.66634 13.3333C2.29967 13.3333 1.9859 13.2028 1.72501 12.942C1.46367 12.6806 1.33301 12.3666 1.33301 12V3.99996C1.33301 3.63329 1.46367 3.31951 1.72501 3.05863C1.9859 2.79729 2.29967 2.66663 2.66634 2.66663H13.333C13.6997 2.66663 14.0137 2.79729 14.275 3.05863C14.5359 3.31951 14.6663 3.63329 14.6663 3.99996V12C14.6663 12.3666 14.5359 12.6806 14.275 12.942C14.0137 13.2028 13.6997 13.3333 13.333 13.3333H2.66634ZM13.333 5.33329L8.34967 8.44996C8.29412 8.48329 8.23567 8.50818 8.17434 8.52463C8.11345 8.54151 8.05523 8.54996 7.99967 8.54996C7.94412 8.54996 7.8859 8.54151 7.82501 8.52463C7.76367 8.50818 7.70523 8.48329 7.64967 8.44996L2.66634 5.33329V12H13.333V5.33329ZM7.99967 7.33329L13.333 3.99996H2.66634L7.99967 7.33329ZM2.66634 5.33329V5.49996V4.51663V4.53329V3.99996V4.53329V4.52463V5.49996V5.33329V12V5.33329Z" fill="#1D2433"/>
+                                      </svg>
+                                </span>
+                                Send Mail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------popup_main_content section---------------------->
+        <div class="popup_main_content_section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="tab_tolls_wrp">
+                            <div class="tab_mt">
+                                <div class="job_tab_sections">
+                                                <div class="job-tab">
+                                                    <ul class="nav_list">
+                                                        <li class="nav-list-item">
+                                                            <a class="nav-link-item active" routerLinkActive="['active', 'highlight']" routerLink="/dashboard/detail-Job-overview" >Job Applications</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link-item" routerLinkActive="'active'" routerLink="/dashboard/detail-Job-overview/resume" >Resume</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link-item " routerLinkActive="'active'" routerLink="/dashboard/detail-Job-overview/form-submission" >Form Submission</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link-item " routerLinkActive="'active'" routerLink="/dashboard/detail-Job-overview/interview">Interview</a>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                </div>
+                                <!------------------------job-tab-route-page------------------>
+                                <div class="job_page_route_pages">
+                                    <router-outlet></router-outlet>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="personal_education_sections">
+                            <personal-education-information></personal-education-information>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a (click)="slide()" class="toggle_btns">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M10.7002 17.3L15.3002 12.7C15.4002 12.6 15.4709 12.4917 15.5122 12.375C15.5542 12.2584 15.5752 12.1334 15.5752 12C15.5752 11.8667 15.5542 11.7417 15.5122 11.625C15.4709 11.5084 15.4002 11.4 15.3002 11.3L10.7002 6.70005C10.5169 6.51672 10.2835 6.42505 10.0002 6.42505C9.71686 6.42505 9.48353 6.51672 9.3002 6.70005C9.11686 6.88338 9.0252 7.11672 9.0252 7.40005C9.0252 7.68338 9.11686 7.91672 9.3002 8.10005L13.2002 12L9.3002 15.9C9.11686 16.0834 9.0252 16.3167 9.0252 16.6C9.0252 16.8834 9.11686 17.1167 9.3002 17.3C9.48353 17.4834 9.71686 17.575 10.0002 17.575C10.2835 17.575 10.5169 17.4834 10.7002 17.3Z" fill="#1D2433" fill-opacity="0.8"/>
+              </svg>
+        </span>
+    </a>
+ </div>
+
+ <div class="candidare_slides_popup_bg" *ngIf="this.slideOpen"></div>

@@ -22,6 +22,15 @@ import { InterviewsComponent } from './client/client-dashboard/interviews/interv
 import { CandidateComponent } from './client/client-dashboard/candidate/candidate.component';
 import { ContractsComponent } from './client/client-dashboard/contracts/contracts.component';
 import { DetailContractsComponent } from './client/client-dashboard/detail-contracts/detail-contracts.component';
+import { ProfileComponent } from './client/client-dashboard/profile/profile.component';
+import { CreateaccountComponent } from './recruiter/auth/createaccount/createaccount.component';
+import { ForgotNewPasswordComponent } from './recruiter/auth/forgot-new-password/forgot-new-password.component';
+import { RecruiterforgotYourPasswordComponent } from './recruiter/auth/recruiterforgot-your-password/recruiterforgot-your-password.component';
+import { RecruiterSignInComponent } from './recruiter/auth/recruiter-sign-in/recruiter-sign-in.component';
+import { RecruiterdashboardComponent } from './recruiter/recruiter-dashboard/recruiterdashboard/recruiterdashboard.component';
+import { RecruitermaindashboardComponent } from './recruiter/recruiter-dashboard/recruitermaindashboard/recruitermaindashboard.component';
+import { RecruiterJobOpeningsComponent } from './recruiter/recruiter-dashboard/recruiter-job-openings/recruiter-job-openings.component';
+import { RecruiterpipelineComponent } from './recruiter/recruiter-dashboard/recruiterpipeline/recruiterpipeline.component';
 
 export const routes: Routes = [
     {
@@ -131,9 +140,39 @@ export const routes: Routes = [
 
 
                 ]
+            },
+            {
+                path:'profile', component:ProfileComponent
             }
 
         ]
     },
+    //Recruiter
+    {
+        path: 'recruiter',component:CreateaccountComponent
+    },
+    {
+        path: 'recruiter/forgot-password',component:ForgotNewPasswordComponent
+    },
+    {
+        path:'recruiter/forgot-new-password',component:RecruiterforgotYourPasswordComponent
+    },
+    {
+        path:'recruiter/sign-in',component:RecruiterSignInComponent
+    },
+    {
+        path:'recruiter/dashboard',component:RecruiterdashboardComponent,
+        children:[
+            {
+                path: '',component:RecruitermaindashboardComponent
+            },
+            {
+                path: 'job-openings',component:RecruiterJobOpeningsComponent
+            },
+            {
+                path: 'pipeline',component:RecruiterpipelineComponent
+            },
+        ]
+    }
     
 ];

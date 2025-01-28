@@ -1,0 +1,133 @@
+.header_section {
+    border-bottom: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 729px;
+    flex-shrink: 0;
+}
+
+.search_areas>input {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+    width: 380px;
+    padding-left: 33px;
+    height: 32px;
+}
+
+.search_areas {
+    position: relative;
+}
+
+span.search_icons {
+    position: absolute;
+    left: 8px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*header button*/
+
+.add_job>button {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    display: flex;
+    padding: 9px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    outline: none;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/200 */
+    font-family: "Helvetica Now MT Micro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: -0.07px;
+}
+
+.header_right>ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.notification>a {
+    border-radius: 1000px;
+    background: var(--Neutral-300, #DBDFE7);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+span.notification_count {
+    position: absolute;
+    border-radius: 100px;
+    background: var(--Danger-700, #F2271C);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    padding: 2px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--text-icon-primary-white, #FFF);
+    text-align: center;
+
+/* Label/300 */
+    font-family: "Helvetica Now MT Micro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 100% */
+    letter-spacing: -0.06px;
+    right: -3px;
+    top: -3px;
+}
+a.admin_user>span>img {
+    width: 32px;
+    height: 32px;
+}
+
+.header_right {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+@media only screen and (max-width: 999px) and (min-width: 300px) {
+    .search_areas > input {
+     
+        width: 100%;
+        padding-left: 33px;
+        height: 32px;
+    }
+    .header_right > ul  {
+        gap: 10px;
+    }
+    .add_job > button  {
+        border-radius: 4px;
+        padding: 9px 8px;
+        gap: 1px;
+
+        font-size: 12px;
+    }
+}

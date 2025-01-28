@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-sideber',
-  imports: [RouterLink],
+  imports: [RouterLink,RouterLinkActive],
   templateUrl: './sideber.component.html',
   styleUrl: './sideber.component.css'
 })
 export class SideberComponent {
+isExtraClassEnabled: any;
 
 }

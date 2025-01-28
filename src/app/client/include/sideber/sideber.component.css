@@ -102,3 +102,6 @@
     bottom: 21px;
     width: 100%;
 }
+a.active>.sideber_icon svg path{
+    fill: #1b1f27;
+}
