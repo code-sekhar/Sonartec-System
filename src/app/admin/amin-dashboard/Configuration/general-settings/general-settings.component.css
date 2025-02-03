@@ -1,0 +1,99 @@
+.card_items {
+    border-radius: 4px;
+    background: var(--Neutral-100, #F2F4F7);
+    padding: 24px;
+}
+
+.card_headers>h2 {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Headline/300/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 120% */
+    letter-spacing: -0.2px;
+    margin-bottom: 20px;
+}
+
+.custom_inputs>label {
+    color: var(--text-icon-primary-black, #1D2433);
+
+/* Label/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    letter-spacing: -0.08px;
+    margin-bottom: 8px;
+}
+.custom_inputs>select {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    /* background: var(--Neutral-0, #FFF); */
+}
+
+.custom_input>input {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+}
+.fld_wrps>button {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    display: flex;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    border: none;
+    color: var(--text-icon-secondary-black, rgba(29, 36, 51, 0.80));
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+}
+
+.fld_wrps {
+    display: flex;
+    gap: 16px;
+}
+
+.card_items {
+    margin-top: 24px;
+}
+
+.custom_inputs>select {
+    color: var(--text-icon-disabled-black, rgba(29, 36, 51, 0.56));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/100/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.08px;
+}
+.custom_inputs>textarea {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+}
+.input_areas_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.custom_inputs {
+    margin-bottom: 14px;
+}

@@ -1,0 +1,717 @@
+<div class="dash_board_wrapers">
+    <dashboard-title [text]="headingText" ></dashboard-title>
+    <!-------------------------next wraper sections---------------------->
+    <div class="next_dashboard_wrapers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wraper-filter-areas">
+                       <div class="filter_search">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M12.6 13.5333L8.86667 9.8C8.53333 10.0667 8.15 10.2778 7.71667 10.4333C7.28333 10.5889 6.82222 10.6667 6.33333 10.6667C5.12222 10.6667 4.09733 10.2473 3.25867 9.40867C2.41956 8.56956 2 7.54444 2 6.33333C2 5.12222 2.41956 4.09711 3.25867 3.258C4.09733 2.41933 5.12222 2 6.33333 2C7.54444 2 8.56956 2.41933 9.40867 3.258C10.2473 4.09711 10.6667 5.12222 10.6667 6.33333C10.6667 6.82222 10.5889 7.28333 10.4333 7.71667C10.2778 8.15 10.0667 8.53333 9.8 8.86667L13.55 12.6167C13.6722 12.7389 13.7333 12.8889 13.7333 13.0667C13.7333 13.2444 13.6667 13.4 13.5333 13.5333C13.4111 13.6556 13.2556 13.7167 13.0667 13.7167C12.8778 13.7167 12.7222 13.6556 12.6 13.5333ZM6.33333 9.33333C7.16667 9.33333 7.87511 9.04178 8.45867 8.45867C9.04178 7.87511 9.33333 7.16667 9.33333 6.33333C9.33333 5.5 9.04178 4.79156 8.45867 4.208C7.87511 3.62489 7.16667 3.33333 6.33333 3.33333C5.5 3.33333 4.79156 3.62489 4.208 4.208C3.62489 4.79156 3.33333 5.5 3.33333 6.33333C3.33333 7.16667 3.62489 7.87511 4.208 8.45867C4.79156 9.04178 5.5 9.33333 6.33333 9.33333Z" fill="#1D2433" fill-opacity="0.8"/>
+                              </svg>
+                        </span>
+                        <div class="search_fields">
+                            <input type="text" placeholder="Search">
+                        </div>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <select name="" id="" class="form-select">
+                            <option value="">Status</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                        </select>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <select name="" id="" class="form-select">
+                            <option value="">Job Title</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                        </select>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <select name="" id="" class="form-select">
+                            <option value="">Headhunter</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                        </select>
+                       </div>
+                       <!------------------filter-grid------------------>
+                       <div class="filtergrid">
+                        <div class="inner_filters_btns_areas">
+                            <div class="inner_filters_btns" >
+                                <button type="button" class="btn btn-ct"   [ngClass]="{ hidden: !gridisVisible }"  (click)="grid()">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M2.75 9.16667V2.5H9.41667V9.16667H2.75ZM2.75 17.5V10.8333H9.41667V17.5H2.75ZM11.0833 9.16667V2.5H17.75V9.16667H11.0833ZM11.0833 17.5V10.8333H17.75V17.5H11.0833ZM4.41667 7.5H7.75V4.16667H4.41667V7.5ZM12.75 7.5H16.0833V4.16667H12.75V7.5ZM12.75 15.8333H16.0833V12.5H12.75V15.8333ZM4.41667 15.8333H7.75V12.5H4.41667V15.8333Z" fill="#1D2433"/>
+                                          </svg>
+                                    </span>
+                                    Gird 
+                                </button>
+                            </div>
+                            <div class="inner_filters_btns">
+                                <button type="button" class="btn btn-ct" [ngClass]="{ hidden: !listVisible }" (click)="list()">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M4.41667 17.5C3.95833 17.5 3.56597 17.3368 3.23958 17.0104C2.91319 16.684 2.75 16.2917 2.75 15.8333V4.16667C2.75 3.70833 2.91319 3.31597 3.23958 2.98958C3.56597 2.66319 3.95833 2.5 4.41667 2.5H16.0833C16.5417 2.5 16.934 2.66319 17.2604 2.98958C17.5868 3.31597 17.75 3.70833 17.75 4.16667V15.8333C17.75 16.2917 17.5868 16.684 17.2604 17.0104C16.934 17.3368 16.5417 17.5 16.0833 17.5H4.41667ZM9.41667 12.5H4.41667V15.8333H9.41667V12.5ZM11.0833 12.5V15.8333H16.0833V12.5H11.0833ZM9.41667 10.8333V7.5H4.41667V10.8333H9.41667ZM11.0833 10.8333H16.0833V7.5H11.0833V10.8333ZM4.41667 5.83333H16.0833V4.16667H4.41667V5.83333Z" fill="#1D2433" fill-opacity="0.56"/>
+                                          </svg>
+                                    </span>
+                                    Table
+                                </button>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <!-------------------------filter-job-sections-------------------->
+                    <div class="grid_sections"   [style.display]="gridisVisible ? 'block' : 'none'">
+                        <div class="filter-job-sections mb-4">
+                            <div class="row">
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                               </div>
+                               <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <candidates-ratings-card></candidates-ratings-card>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------------job-card-sections------------------>
+                        <div class="job-card-pagination-sections">
+                            <div class="table_pagination_sections">
+                                <div class="row">
+                                    <div class="col-lg-6 col-6">
+                                        <div class="pagination_count">
+                                            <h4>Showing 1-7 of 48 items</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-6">
+                                        <div class="pagination_number">
+                                            <ul>
+                                                <li><a href="" class="active">1</a></li>
+                                                <li><a href="">2</a></li>
+                                                <li><a href="">3</a></li>
+                                                <li><a href="">4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--------------------------List sections--------------->
+                    <div class="list_sections"  [style.display]="listVisible ? 'block' : 'none'">
+                        <div class="hiring_table">
+                            <table class="table  table-striped">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </th>
+                                    <th>Candidate Name</th>
+                                    <th>Job title</th>
+                                    <th>Rating</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_purple">
+                                            Screening
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_red">
+                                            Interviewed
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_orange">
+                                            Offered 
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Hired  
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_nil">
+                                            Submitted 
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr> 
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_purple">
+                                            Screening
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_red">
+                                            Interviewed
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_red">
+                                            Interviewed
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_red">
+                                            Interviewed
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                        Senior Product Designer
+                                    </td>
+                                    <td >
+                                       <div class="ratings">
+                                        4.7 
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.12524 12.9528L12.2377 14.8353C12.8077 15.1803 13.5052 14.6703 13.3552 14.0253L12.5302 10.4853L15.2827 8.10031C15.7852 7.66531 15.5152 6.84031 14.8552 6.78781L11.2327 6.48031L9.81524 3.13531C9.56024 2.52781 8.69024 2.52781 8.43524 3.13531L7.01774 6.47281L3.39524 6.78031C2.73524 6.83281 2.46524 7.65781 2.96774 8.09281L5.72024 10.4778L4.89524 14.0178C4.74524 14.6628 5.44274 15.1728 6.01274 14.8278L9.12524 12.9528Z" fill="#FBBF23"/>
+                                              </svg>
+                                        </span>
+                                        (10 review)
+                                       </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_red">
+                                            Interviewed
+                                          </span>
+                                    </td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_373_6961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_373_6961)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="#1D2433" fill-opacity="0.56"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View
+                                        </button>
+                                        <button class="download_cv_btns">
+                                            Download CV
+                                        </button>
+                                        <button class="next_stage">
+                                            Move to Next Stage
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="table_pagination_sections">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="pagination_count">
+                                            <h4>Showing 1-7 of 48 items</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="pagination_number">
+                                            <ul>
+                                                <li><a href="" class="active">1</a></li>
+                                                <li><a href="">2</a></li>
+                                                <li><a href="">3</a></li>
+                                                <li><a href="">4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

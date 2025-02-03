@@ -1,0 +1,694 @@
+<div class="dash_board_wrapers">
+    <div class="headers_sections">
+        <div class="row">
+            <div class="col-lg-6">
+                <dashboard-title [text]="headingText" ></dashboard-title>
+            </div>
+            <div class="col-lg-6">
+                <div class="add_job">
+                    <button (click)="addUsers()">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M6 9.5C5.85833 9.5 5.73967 9.452 5.644 9.356C5.548 9.26033 5.5 9.14167 5.5 9V6.5H3C2.85833 6.5 2.7395 6.452 2.6435 6.356C2.54783 6.26033 2.5 6.14167 2.5 6C2.5 5.85833 2.54783 5.7395 2.6435 5.6435C2.7395 5.54783 2.85833 5.5 3 5.5H5.5V3C5.5 2.85833 5.548 2.7395 5.644 2.6435C5.73967 2.54783 5.85833 2.5 6 2.5C6.14167 2.5 6.2605 2.54783 6.3565 2.6435C6.45217 2.7395 6.5 2.85833 6.5 3V5.5H9C9.14167 5.5 9.26033 5.54783 9.356 5.6435C9.452 5.7395 9.5 5.85833 9.5 6C9.5 6.14167 9.452 6.26033 9.356 6.356C9.26033 6.452 9.14167 6.5 9 6.5H6.5V9C6.5 9.14167 6.45217 9.26033 6.3565 9.356C6.2605 9.452 6.14167 9.5 6 9.5Z" fill="#1D2433"/>
+                            </svg>
+                        </span>
+                        Add User
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------next wraper sections---------------------->
+    <div class="next_dashboard_wrapers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wraper-filter-areas">
+                       <div class="filter_search">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M12.6 13.5333L8.86667 9.8C8.53333 10.0667 8.15 10.2778 7.71667 10.4333C7.28333 10.5889 6.82222 10.6667 6.33333 10.6667C5.12222 10.6667 4.09733 10.2473 3.25867 9.40867C2.41956 8.56956 2 7.54444 2 6.33333C2 5.12222 2.41956 4.09711 3.25867 3.258C4.09733 2.41933 5.12222 2 6.33333 2C7.54444 2 8.56956 2.41933 9.40867 3.258C10.2473 4.09711 10.6667 5.12222 10.6667 6.33333C10.6667 6.82222 10.5889 7.28333 10.4333 7.71667C10.2778 8.15 10.0667 8.53333 9.8 8.86667L13.55 12.6167C13.6722 12.7389 13.7333 12.8889 13.7333 13.0667C13.7333 13.2444 13.6667 13.4 13.5333 13.5333C13.4111 13.6556 13.2556 13.7167 13.0667 13.7167C12.8778 13.7167 12.7222 13.6556 12.6 13.5333ZM6.33333 9.33333C7.16667 9.33333 7.87511 9.04178 8.45867 8.45867C9.04178 7.87511 9.33333 7.16667 9.33333 6.33333C9.33333 5.5 9.04178 4.79156 8.45867 4.208C7.87511 3.62489 7.16667 3.33333 6.33333 3.33333C5.5 3.33333 4.79156 3.62489 4.208 4.208C3.62489 4.79156 3.33333 5.5 3.33333 6.33333C3.33333 7.16667 3.62489 7.87511 4.208 8.45867C4.79156 9.04178 5.5 9.33333 6.33333 9.33333Z" fill="#1D2433" fill-opacity="0.8"/>
+                              </svg>
+                        </span>
+                        <div class="search_fields">
+                            <input type="text" placeholder="Search">
+                        </div>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <select name="" id="" class="form-select">
+                            <option value="">Status</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                        </select>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <select name="" id="" class="form-select">
+                            <option value="">Role</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                            <option value="">All</option>
+                        </select>
+                       </div>
+                       <!---------------filter-drop-down----------------->
+                       <div class="filter_drop_down">
+                        <div class="search_fields">
+                            <input type="date" placeholder="Search">
+                        </div>
+                       </div>
+                       <!------------------filter-grid------------------>
+                       <div class="filtergrid">
+                       </div>
+                    </div>
+                    <!--------------------------List sections--------------->
+                    <div class="list_sections" >
+                        <div class="hiring_table">
+                            <table class="table  table-striped">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th width="10%">Date Created</th>
+                                    <th class="last">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns" (click)="deActivePopups()">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage" (click)="deActivePopups()">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns" (click)="deActivePopups()">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage" (click)="deActivePopups()">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Client
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_inactive">
+                                            inactive
+                                        </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="activate_actions_btns" (click)="deActivePopups()">
+                                            Activate
+                                        </button>
+                                        <button class="next_stage" (click)="deActivePopups()">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Client
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_inactive">
+                                            inactive
+                                        </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="activate_actions_btns">
+                                            Activate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Client
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_inactive">
+                                            inactive
+                                        </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="activate_actions_btns">
+                                            Activate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        John Doe
+                                    </td>
+                                    <td >
+                                        john.doegmail.com
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                       
+                                    </td>
+                                    <td >
+                                        <span class="custom_badge badge_green">
+                                            Active
+                                          </span>
+                                    </td>
+                                    <td>12/01/2024</td>
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <mask id="mask0_526_46329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                                                      <rect width="12" height="12" fill="#D9D9D9"/>
+                                                    </mask>
+                                                    <g mask="url(#mask0_526_46329)">
+                                                      <path d="M6 8C6.625 8 7.15633 7.78133 7.594 7.344C8.03133 6.90633 8.25 6.375 8.25 5.75C8.25 5.125 8.03133 4.59367 7.594 4.156C7.15633 3.71867 6.625 3.5 6 3.5C5.375 3.5 4.84367 3.71867 4.406 4.156C3.96867 4.59367 3.75 5.125 3.75 5.75C3.75 6.375 3.96867 6.90633 4.406 7.344C4.84367 7.78133 5.375 8 6 8ZM6 7.1C5.625 7.1 5.30633 6.96867 5.044 6.706C4.78133 6.44367 4.65 6.125 4.65 5.75C4.65 5.375 4.78133 5.05617 5.044 4.7935C5.30633 4.53117 5.625 4.4 6 4.4C6.375 4.4 6.69383 4.53117 6.9565 4.7935C7.21883 5.05617 7.35 5.375 7.35 5.75C7.35 6.125 7.21883 6.44367 6.9565 6.706C6.69383 6.96867 6.375 7.1 6 7.1ZM6 9.5C4.78333 9.5 3.675 9.16033 2.675 8.481C1.675 7.802 0.95 6.89167 0.5 5.75C0.95 4.60833 1.675 3.69783 2.675 3.0185C3.675 2.3395 4.78333 2 6 2C7.21667 2 8.325 2.3395 9.325 3.0185C10.325 3.69783 11.05 4.60833 11.5 5.75C11.05 6.89167 10.325 7.802 9.325 8.481C8.325 9.16033 7.21667 9.5 6 9.5Z" fill="white"/>
+                                                    </g>
+                                                  </svg>
+                                            </span> 
+                                            View Profile
+                                        </button>
+                                        <button class="deactive_btns">
+                                            Deactivate
+                                        </button>
+                                        <button class="next_stage">
+                                            Reset Password
+                                        </button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="table_pagination_sections">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-6">
+                                        <div class="pagination_count">
+                                            <h4>Showing 1-7 of 48 items</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-6">
+                                        <div class="pagination_number">
+                                            <ul>
+                                                <li><a href="" class="active">1</a></li>
+                                                <li><a href="">2</a></li>
+                                                <li><a href="">3</a></li>
+                                                <li><a href="">4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------popup---------------------------------->
+<!-------------------------------------widwral_popup------------------>
+<div class="widdrawl_popups"  *ngIf="this.showPopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>View Profile</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items">
+                        <label for="">Name</label>
+                        <h4>Nguyen Van Cuong</h4>
+                    </div>
+                    <div class="view_profile_items">
+                        <label for="">Email</label>
+                        <h4>cuongazen92gmail.com</h4>
+                    </div>
+                    <div class="view_profile_items">
+                        <label for="">Role</label>
+                        <h4>Recruiter</h4>
+                    </div>
+                    <div class="view_profile_items">
+                        <label for="">Status</label>
+                        <span class="activate_actions_btns">
+                            Active
+                        </span>
+                    </div>
+                    <div class="view_profile_items">
+                        <label for="">Created At</label>
+                        <h4>20:30 - 01/01/2025</h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section margin-24">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center  justify-content-center">
+                            <button class="cancel_form" style="width: 50%;">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showPopup">
+
+</div>
+<!-----------------------------add user------------------>
+<div class="widdrawl_popups"  *ngIf="this.showAddPopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Add User</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="widdrawl_inputs">
+                    <label for="">Name</label>
+                    <input type="text"class="form-control">
+                </div>
+                <div class="widdrawl_inputs">
+                    <label for="">Email</label>
+                    <input type="text"class="form-control">
+                </div>
+                <div class="widdrawl_inputs">
+                    <label for="">Role</label>
+                    <div class="d-flex gap-2">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >Employer
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Recruiter
+                            <label class="form-check-label" for="radio2"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="widdrawl_inputs">
+                    <label for="">Status</label>
+                    <div class="d-flex gap-2">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option3" >Active
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option4">Inactive
+                            <label class="form-check-label" for="radio2"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm">
+                                Create User
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showAddPopup">
+
+</div>
+<!------------------------deactive users------------------>
+<!-------------------------------------widwral_popup------------------>
+<div class="widdrawl_popups"  *ngIf="this.deactivePopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Delete Role</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <h4 class="line-height">Are you sure you want to delete the role Recruiter? This action cannot be undone.</h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm">
+                                Create User
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.deactivePopup">
+
+</div>

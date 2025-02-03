@@ -1,0 +1,47 @@
+<div class="dash_board_wrapers">
+    <div class="headers_sections">
+        <div class="row">
+            <div class="col-lg-6">
+                <dashboard-title [text]="headingText" ></dashboard-title>
+            </div>
+            <div class="col-lg-6">
+                <div class="add_job">
+                    <button >
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M6 9.5C5.85833 9.5 5.73967 9.452 5.644 9.356C5.548 9.26033 5.5 9.14167 5.5 9V6.5H3C2.85833 6.5 2.7395 6.452 2.6435 6.356C2.54783 6.26033 2.5 6.14167 2.5 6C2.5 5.85833 2.54783 5.7395 2.6435 5.6435C2.7395 5.54783 2.85833 5.5 3 5.5H5.5V3C5.5 2.85833 5.548 2.7395 5.644 2.6435C5.73967 2.54783 5.85833 2.5 6 2.5C6.14167 2.5 6.2605 2.54783 6.3565 2.6435C6.45217 2.7395 6.5 2.85833 6.5 3V5.5H9C9.14167 5.5 9.26033 5.54783 9.356 5.6435C9.452 5.7395 9.5 5.85833 9.5 6C9.5 6.14167 9.452 6.26033 9.356 6.356C9.26033 6.452 9.14167 6.5 9 6.5H6.5V9C6.5 9.14167 6.45217 9.26033 6.3565 9.356C6.2605 9.452 6.14167 9.5 6 9.5Z" fill="#1D2433"/>
+                            </svg>
+                        </span>
+                        Add User
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="tab_tolls_wrp">
+    <div class="container-fluid">
+        <div class="tab_mt">
+            <div class="job_tab_sections">
+                            <div class="job-tab">
+                                <ul class="nav_list">
+                                    <li class="nav-list-item">
+                                        <a class="nav-link-item active"  routerLinkActive="active" routerLink="/admin/dashboard/subscriptions"  [routerLinkActiveOptions]="{ exact: true }">Subscription Plans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link-item"  routerLinkActive="active" routerLink="/admin/dashboard/subscriptions/payment-traking" >Payment Tracking</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link-item "  routerLinkActive="active" routerLink="/admin/dashboard/subscriptions/commissions" >Commissions</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+            </div>
+            <!------------------------job-tab-route-page------------------>
+            <div class="job_page_route_pages">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

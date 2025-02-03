@@ -1,0 +1,230 @@
+<div class="next_dashboard_wrapers">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--------------------------List sections--------------->
+                <div class="list_sections" >
+                    <div class="hiring_table">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="text-left">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                    </div>
+                                </th>
+                                <th>Role Name</th>
+                                <th>Permissions</th>
+                                <th>Description</th>
+                                <th class="last">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Admin
+                                    </td>
+                                    <td >
+                                        View, Edit, Delete, Manage All
+                                    </td>
+                                    <td >
+                                        Full system
+                                       
+                                    </td>
+                                    
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M2.5 9.5H3.2L7.5125 5.1875L6.8125 4.4875L2.5 8.8V9.5ZM9.65 4.4625L7.525 2.3625L8.225 1.6625C8.41667 1.47083 8.65217 1.375 8.9315 1.375C9.2105 1.375 9.44583 1.47083 9.6375 1.6625L10.3375 2.3625C10.5292 2.55417 10.6292 2.7855 10.6375 3.0565C10.6458 3.32717 10.5542 3.55833 10.3625 3.75L9.65 4.4625ZM2 10.5C1.85833 10.5 1.73967 10.452 1.644 10.356C1.548 10.2603 1.5 10.1417 1.5 10V8.5875C1.5 8.52083 1.5125 8.45633 1.5375 8.394C1.5625 8.33133 1.6 8.275 1.65 8.225L6.8 3.075L8.925 5.2L3.775 10.35C3.725 10.4 3.66883 10.4375 3.6065 10.4625C3.54383 10.4875 3.47917 10.5 3.4125 10.5H2ZM7.1625 4.8375L6.8125 4.4875L7.5125 5.1875L7.1625 4.8375Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                  </svg>
+                                            </span> 
+                                            Edit
+                                        </button>
+                                        <button class="deactive_btns" (click)="deActivePopups()">
+                                            Delete
+                                        </button>
+                                      </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Recruiter
+                                    </td>
+                                    <td >
+                                        View, Edit Jobs, Manage Candidates
+                                    </td>
+                                    <td >
+                                        Hiring tasks
+                                       
+                                    </td>
+                                    
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M2.5 9.5H3.2L7.5125 5.1875L6.8125 4.4875L2.5 8.8V9.5ZM9.65 4.4625L7.525 2.3625L8.225 1.6625C8.41667 1.47083 8.65217 1.375 8.9315 1.375C9.2105 1.375 9.44583 1.47083 9.6375 1.6625L10.3375 2.3625C10.5292 2.55417 10.6292 2.7855 10.6375 3.0565C10.6458 3.32717 10.5542 3.55833 10.3625 3.75L9.65 4.4625ZM2 10.5C1.85833 10.5 1.73967 10.452 1.644 10.356C1.548 10.2603 1.5 10.1417 1.5 10V8.5875C1.5 8.52083 1.5125 8.45633 1.5375 8.394C1.5625 8.33133 1.6 8.275 1.65 8.225L6.8 3.075L8.925 5.2L3.775 10.35C3.725 10.4 3.66883 10.4375 3.6065 10.4625C3.54383 10.4875 3.47917 10.5 3.4125 10.5H2ZM7.1625 4.8375L6.8125 4.4875L7.5125 5.1875L7.1625 4.8375Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                  </svg>
+                                            </span> 
+                                            Edit
+                                        </button>
+                                        <button class="deactive_btns"  (click)="deActivePopups()" >
+                                            Delete
+                                        </button>
+                                      </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                                        </div>
+                                    </td>
+                                    <td >
+                                        Client
+                                    </td>
+                                    <td >
+                                        View, Edit Jobs, Manage Candidates
+                                    </td>
+                                    <td >
+                                        Hiring tasks
+                                       
+                                    </td>
+                                    
+                                    <td >
+                                      <div class="flex_action">
+                                        <button class="view_btns" (click)="showprofile()">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M2.5 9.5H3.2L7.5125 5.1875L6.8125 4.4875L2.5 8.8V9.5ZM9.65 4.4625L7.525 2.3625L8.225 1.6625C8.41667 1.47083 8.65217 1.375 8.9315 1.375C9.2105 1.375 9.44583 1.47083 9.6375 1.6625L10.3375 2.3625C10.5292 2.55417 10.6292 2.7855 10.6375 3.0565C10.6458 3.32717 10.5542 3.55833 10.3625 3.75L9.65 4.4625ZM2 10.5C1.85833 10.5 1.73967 10.452 1.644 10.356C1.548 10.2603 1.5 10.1417 1.5 10V8.5875C1.5 8.52083 1.5125 8.45633 1.5375 8.394C1.5625 8.33133 1.6 8.275 1.65 8.225L6.8 3.075L8.925 5.2L3.775 10.35C3.725 10.4 3.66883 10.4375 3.6065 10.4625C3.54383 10.4875 3.47917 10.5 3.4125 10.5H2ZM7.1625 4.8375L6.8125 4.4875L7.5125 5.1875L7.1625 4.8375Z" fill="#1D2433" fill-opacity="0.8"/>
+                                                  </svg>
+                                            </span> 
+                                            Edit
+                                        </button>
+                                        <button class="deactive_btns" (click)="deActivePopups()" >
+                                            Delete
+                                        </button>
+                                      </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+         
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-------------------------------------widwral_popup------------------>
+<div class="widdrawl_popups"  *ngIf="this.showPopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Edit Role Permissions</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="widdrawl_inputs">
+                    <label for="">Role Name</label>
+                    <input type="text"class="form-control" value="Recruiter">
+                </div>
+                <div class="widdrawl_inputs">
+                    <label for="">Permissions</label>
+                    <div class="">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">View</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" >
+                            <label class="form-check-label">Edit</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" >
+                            <label class="form-check-label">Delete</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="widdrawl_inputs">
+                    <label for="">Description</label>
+                    <textarea class="form-control" placeholder="Description"></textarea>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm">
+                                Save Changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showPopup">
+
+</div>
+<!-----------------------------add user------------------>
+<div class="widdrawl_popups"  *ngIf="this.deactivePopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Delete Role</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <h4 class="line-height">Are you sure you want to delete the role <b>Recruiter?</b> This action cannot be undone.</h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm delete_con">
+                                Confirm Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.deactivePopup">
+
+</div>

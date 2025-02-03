@@ -27,8 +27,41 @@
     height: 100vh;
     overflow-y: scroll;
 }
+a.close_btns {
+    font-size: 26px;
+    color: #fbbf23;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    display: block;
+}
 @media only screen and (max-width: 999px) and (min-width: 300px) {
-    .side_ber {
+    /* .side_ber {
         display: none;
+    } */
+    .col-lg-2.left-right.height-100 {
+        position: fixed;
+       
+        top: 55px;
+        z-index: 999;
+        bottom: 0;
+        width: 60%;
     }
+    .col-lg-2.left-right.height-100 {
+        left: -500px;
+        transition: all 0.5s ease-in-out;
     }
+    .col-lg-2.left-right.height-100.active{
+        left: 0px;
+    }
+    a.close_btns {
+     
+        display: block;
+    }
+    .add_job > button  {
+        border-radius: 4px;
+        padding: 5px 3px;
+        gap: 1px;
+        font-size: 8px;
+    }
+ }

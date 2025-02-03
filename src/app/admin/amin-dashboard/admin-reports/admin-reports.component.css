@@ -1,0 +1,107 @@
+.add_job>button {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    display: flex;
+    padding: 9px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    outline: none;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+    font-family: "Helvetica Now MT Micro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.07px;
+}
+.add_job{
+    float: right;
+}
+.filter_search {
+    position: relative;
+}
+
+.filter_search>span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+}
+
+
+
+.next_dashboard_wrapers {
+    margin-top: 12px;
+}
+
+.filter_drop_down>select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7) !important;
+    /* background: var(--Neutral-0, #FFF); */
+    color: var(--text-icon-disabled-black, rgba(29, 36, 51, 0.56));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.08px;
+    padding: 7px 9px;
+}
+
+.date_picker>input {
+    color: var(--text-icon-disabled-black, rgba(29, 36, 51, 0.56));
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Paragraph/100/Light */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.08px;
+}
+
+.wraper-filter-areas {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inner_filters_btns_areas {
+    border-radius: 4px;
+    background: var(--Neutral-200, #EEF0F4);
+    display: flex;
+    padding: 5px;
+}
+.filter_drop_down {
+    width: 100%;
+}
+
+.filter_drop_down>select {
+    width: 100% !important;
+}
+
+.search_fields {
+    width: 100%;
+}
+
+.filter_search {
+    width: 100% ;
+}
+.filter-job-sections {
+    margin-top: 24px;
+}
+.wrps {
+    margin-top: 20px;
+}
+.form-control.pl-5{
+    padding-left: 25px !important;
+    border-radius: 4px;
+border: 1px solid var(--Neutral-300, #DBDFE7);
+background: var(--Neutral-0, #FFF);
+}

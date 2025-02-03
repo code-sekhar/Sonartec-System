@@ -74,7 +74,7 @@ span.count_number {
     letter-spacing: -0.48px;
 }
 .dashboard_score {
-    margin-top: 24px;
+    margin: 24px 0;
 }
 .score_icons {
     width: 40px;
