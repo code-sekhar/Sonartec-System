@@ -11,4 +11,20 @@ export class ScreeningCandidatesMoveStageComponent {
   toggleTooltip(){
     this.isTooltipVisible = !this.isTooltipVisible
   }
+  showScorePopup:boolean = false;
+  viewScore(){
+    this.showScorePopup = true;
+  }
+  closeScore(){
+    this.showScorePopup = false
+  }
+
+  //History popup 
+  showHistoryPopup:boolean = false;
+  viewHistory(){
+    this.showHistoryPopup = true;
+  }
+  closeHistory(){
+    this.showHistoryPopup = false
+  }
 }

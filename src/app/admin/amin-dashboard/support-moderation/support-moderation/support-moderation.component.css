@@ -1,0 +1,138 @@
+
+/*CONTROLL TOOLS*/
+.common_buttons >a{
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.common_buttons.edit_controll >a{
+    border-radius: 4px;
+background: var(--Danger-700, #F2271C);
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+}
+.common_buttons.delete_controll >a{
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    color: var(--text-icon-primary-white, #000000);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+}
+.share_controll.common_buttons >a{
+    border-radius: 4px;
+    background: var(--Purple-700, #8B2CE9);
+    color: var(--text-icon-primary-black, #ffffff);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+}
+/*tab sections*/
+ul.nav_list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+ul.nav_list>li {
+    display: inline-block;
+}
+
+ul.nav_list>li>a {
+    
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    letter-spacing: -0.08px;
+    padding: 16px 0px;
+    display: block;
+}
+ul.nav_list>li>a.nav-link-item{
+    color: var(--text-icon-disabled-black, rgba(29, 36, 51, 0.56));
+}
+ul.nav_list>li {
+    margin: 0px 12px;
+}
+ul.nav_list>li:first-child {
+    margin-left: 0px;
+}
+
+ul.nav_list>li>a.nav-link-item.active {
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+    position: relative;
+}
+ul.nav_list>li>a.nav-link-item.active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:var(--Yellow-700, #FBBF23);
+}
+ul.nav_list>li>a.nav-link-item::after{
+    background-color:transparent;
+}
+.job-tab {
+    border-bottom: 1px solid var(--Neutral-300, #DBDFE7);
+}
+
+.job_tab_sections {
+    margin-top: 16px;
+}
+.add_job>button {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    display: flex;
+    padding: 9px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    outline: none;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+    font-family: "Helvetica Now MT Micro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.07px;
+}
+.add_job{
+    float: right;
+}
+.notification_items {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+}

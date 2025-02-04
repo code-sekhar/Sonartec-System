@@ -1,0 +1,37 @@
+<div class="dash_board_wrapers">
+    <div class="headers_sections">
+        <div class="row">
+            <div class="col-lg-6 col-6">
+                <dashboard-title [text]="headingText" ></dashboard-title>
+            </div>
+            <div class="col-lg-6 col-6">
+            </div>
+        </div>
+    </div>
+<div class="tab_tolls_wrp">
+    <div class="container-fluid">
+        <div class="tab_mt">
+            <div class="job_tab_sections">
+                <div class="job-tab">
+                    <ul class="nav_list">
+                        <li class="nav-list-item">
+                            <a class="nav-link-item active"  routerLinkActive="active" routerLink="/admin/dashboard/support"  [routerLinkActiveOptions]="{ exact: true }">Support Tickets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-item"  routerLinkActive="active" routerLink="/admin/dashboard/support/notifications-center" >Notifications Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-item"  routerLinkActive="active" routerLink="/admin/dashboard/support/activity-log" > Activity Log</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!------------------------job-tab-route-page------------------>
+            <div class="job_page_route_pages">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

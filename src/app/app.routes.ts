@@ -69,6 +69,10 @@ import { AdminReportsComponent } from './admin/amin-dashboard/admin-reports/admi
 import { ReportsComponent } from './admin/amin-dashboard/Configuration/reports/reports.component';
 import { GeneralSettingsComponent } from './admin/amin-dashboard/Configuration/general-settings/general-settings.component';
 import { PaymentTrackingComponent } from './admin/amin-dashboard/Configuration/payment-tracking/payment-tracking.component';
+import { SupportModerationComponent } from './admin/amin-dashboard/support-moderation/support-moderation/support-moderation.component';
+import { SupportTicketsComponent } from './admin/amin-dashboard/support-moderation/support-tickets/support-tickets.component';
+import { SupportNotificationCenterComponent } from './admin/amin-dashboard/support-moderation/support-notification-center/support-notification-center.component';
+import { SupportActivityLogComponent } from './admin/amin-dashboard/support-moderation/support-activity-log/support-activity-log.component';
 
 export const routes: Routes = [
     {
@@ -395,6 +399,21 @@ export const routes: Routes = [
                     }
                 ],
                 
+            },
+            {
+                path:'support',component:SupportModerationComponent,
+                children:[
+                    {
+                        path:'',component:SupportTicketsComponent
+                    },
+                    {
+                        path:'notifications-center',component:SupportNotificationCenterComponent
+                    },
+                    {
+                        path:'activity-log',component:SupportActivityLogComponent
+                    }
+
+                ]
             }
         ]
     }

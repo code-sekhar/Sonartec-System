@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="important_links">
-                <a href="" class="view_score">
+                <a (click)="viewScore()" class="view_score">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M10.667 13.3333V8.66663H13.3337V13.3333H10.667ZM6.66699 13.3333V2.66663H9.33366V13.3333H6.66699ZM2.66699 13.3333V5.99996H5.33366V13.3333H2.66699Z" fill="#1976D2"/>
@@ -45,7 +45,7 @@
                     </span> 
                     View Scores
                 </a>
-                <a href="" class="view_link">
+                <a (click)="viewHistory()" class="view_link">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M3.99967 9.33337H9.33301V8.00004H3.99967V9.33337ZM3.99967 7.33337H11.9997V6.00004H3.99967V7.33337ZM3.99967 5.33337H11.9997V4.00004H3.99967V5.33337ZM1.33301 14.6667V2.66671C1.33301 2.30004 1.46356 1.98615 1.72467 1.72504C1.98579 1.46393 2.29967 1.33337 2.66634 1.33337H13.333C13.6997 1.33337 14.0136 1.46393 14.2747 1.72504C14.5358 1.98615 14.6663 2.30004 14.6663 2.66671V10.6667C14.6663 11.0334 14.5358 11.3473 14.2747 11.6084C14.0136 11.8695 13.6997 12 13.333 12H3.99967L1.33301 14.6667ZM3.43301 10.6667H13.333V2.66671H2.66634V11.4167L3.43301 10.6667Z" fill="#388E3C"/>
@@ -127,4 +127,223 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="viwe_score_popup"  *ngIf="this.showScorePopup">
+    <div class="view_score_header">
+        <h4>View Scores</h4>
+        <div class="score_close">
+            <span (click)="closeScore()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_517_45917" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_517_45917)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+    </div>
+    <div class="score_bodys">
+        <div class="all_top">
+            <div class="score_number">
+                <h2>4.7</h2>
+                <ul class="ratings_number">
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 14.3911L13.4583 16.4828C14.0916 16.8661 14.8666 16.2995 14.6999 15.5828L13.7833 11.6495L16.8416 8.99948C17.3999 8.51615 17.0999 7.59948 16.3666 7.54115L12.3416 7.19948L10.7666 3.48281C10.4833 2.80781 9.51661 2.80781 9.23327 3.48281L7.65827 7.19115L3.63327 7.53281C2.89994 7.59115 2.59994 8.50781 3.15827 8.99115L6.21661 11.6411L5.29994 15.5745C5.13327 16.2911 5.90827 16.8578 6.54161 16.4745L9.99994 14.3911Z" fill="#FBBF23"/>
+                              </svg>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 14.3911L13.4583 16.4828C14.0916 16.8661 14.8666 16.2995 14.6999 15.5828L13.7833 11.6495L16.8416 8.99948C17.3999 8.51615 17.0999 7.59948 16.3666 7.54115L12.3416 7.19948L10.7666 3.48281C10.4833 2.80781 9.51661 2.80781 9.23327 3.48281L7.65827 7.19115L3.63327 7.53281C2.89994 7.59115 2.59994 8.50781 3.15827 8.99115L6.21661 11.6411L5.29994 15.5745C5.13327 16.2911 5.90827 16.8578 6.54161 16.4745L9.99994 14.3911Z" fill="#FBBF23"/>
+                              </svg>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 14.3911L13.4583 16.4828C14.0916 16.8661 14.8666 16.2995 14.6999 15.5828L13.7833 11.6495L16.8416 8.99948C17.3999 8.51615 17.0999 7.59948 16.3666 7.54115L12.3416 7.19948L10.7666 3.48281C10.4833 2.80781 9.51661 2.80781 9.23327 3.48281L7.65827 7.19115L3.63327 7.53281C2.89994 7.59115 2.59994 8.50781 3.15827 8.99115L6.21661 11.6411L5.29994 15.5745C5.13327 16.2911 5.90827 16.8578 6.54161 16.4745L9.99994 14.3911Z" fill="#FBBF23"/>
+                              </svg>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 14.3911L13.4583 16.4828C14.0916 16.8661 14.8666 16.2995 14.6999 15.5828L13.7833 11.6495L16.8416 8.99948C17.3999 8.51615 17.0999 7.59948 16.3666 7.54115L12.3416 7.19948L10.7666 3.48281C10.4833 2.80781 9.51661 2.80781 9.23327 3.48281L7.65827 7.19115L3.63327 7.53281C2.89994 7.59115 2.59994 8.50781 3.15827 8.99115L6.21661 11.6411L5.29994 15.5745C5.13327 16.2911 5.90827 16.8578 6.54161 16.4745L9.99994 14.3911Z" fill="#FBBF23"/>
+                              </svg>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 14.3911L13.4583 16.4828C14.0916 16.8661 14.8666 16.2995 14.6999 15.5828L13.7833 11.6495L16.8416 8.99948C17.3999 8.51615 17.0999 7.59948 16.3666 7.54115L12.3416 7.19948L10.7666 3.48281C10.4833 2.80781 9.51661 2.80781 9.23327 3.48281L7.65827 7.19115L3.63327 7.53281C2.89994 7.59115 2.59994 8.50781 3.15827 8.99115L6.21661 11.6411L5.29994 15.5745C5.13327 16.2911 5.90827 16.8578 6.54161 16.4745L9.99994 14.3911Z" fill="#DBDFE7"/>
+                              </svg>
+                        </span>
+                    </li>
+                </ul>
+                <h3>(10 review)</h3>
+            </div>
+            <div class="progress_ber_sections">
+                <div class="items_row">
+                    <label for="">CV quality</label>
+                    <div class="item_progress_bers">
+                        <div class="full_pregress">
+                            <span>
+    
+                            </span>
+                        </div>
+                    </div>
+                    <span class="number">
+                        5
+                    </span>
+                </div>
+                <div class="items_row">
+                    <label for="">Global experience</label>
+                    <div class="item_progress_bers">
+                        <div class="full_pregress">
+                            <span>
+    
+                            </span>
+                        </div>
+                    </div>
+                    <span class="number">
+                        5
+                    </span>
+                </div>
+                <div class="items_row">
+                    <label for="">Job Matching</label>
+                    <div class="item_progress_bers">
+                        <div class="full_pregress">
+                            <span>
+    
+                            </span>
+                        </div>
+                    </div>
+                    <span class="number">
+                        5
+                    </span>
+                </div>
+               
+                
+            </div>
+        </div>
+        <div class="bottom_button">
+            <button class="white_button">
+                Cloes
+            </button>
+        </div>
+    </div>
+</div>
+<div class="blur_bgs" *ngIf="this.showScorePopup">
+
+</div>
+
+<!-------------comment history--------------->
+<div class="viwe_score_popup"  *ngIf="this.showHistoryPopup">
+    <div class="view_score_header">
+        <h4>View Comments</h4>
+        <div class="score_close">
+            <span (click)="closeHistory()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_517_45917" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_517_45917)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+    </div>
+    <div class="score_bodys">
+        <div class="comment_history_body">
+            <div class="comment_button_areas">
+                <h4>Comments History</h4>
+                <div class="add_history">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M7.99967 12.6654C7.81079 12.6654 7.65256 12.6014 7.52501 12.4734C7.39701 12.3458 7.33301 12.1876 7.33301 11.9987V8.66536H3.99967C3.81079 8.66536 3.65234 8.60136 3.52434 8.47336C3.39679 8.34581 3.33301 8.18759 3.33301 7.9987C3.33301 7.80981 3.39679 7.65136 3.52434 7.52336C3.65234 7.39581 3.81079 7.33203 3.99967 7.33203H7.33301V3.9987C7.33301 3.80981 7.39701 3.65136 7.52501 3.52336C7.65256 3.39581 7.81079 3.33203 7.99967 3.33203C8.18856 3.33203 8.34701 3.39581 8.47501 3.52336C8.60256 3.65136 8.66634 3.80981 8.66634 3.9987V7.33203H11.9997C12.1886 7.33203 12.3468 7.39581 12.4743 7.52336C12.6023 7.65136 12.6663 7.80981 12.6663 7.9987C12.6663 8.18759 12.6023 8.34581 12.4743 8.47336C12.3468 8.60136 12.1886 8.66536 11.9997 8.66536H8.66634V11.9987C8.66634 12.1876 8.60256 12.3458 8.47501 12.4734C8.34701 12.6014 8.18856 12.6654 7.99967 12.6654Z" fill="#E9A400"/>
+                        </svg>
+                    </span>
+                    Add comment
+                </div>
+            </div>
+            <div class="comment_history_bodys">
+                <div class="comment-history_items">
+                    <h3>12/12/2024</h3>
+                    <p>The candidate has great technical skills but needs to improve soft skills <b>- Recruiter</b></p>
+                </div>
+                <div class="comment-history_items">
+                    <h3>12/12/2024</h3>
+                    <p>The candidate has great technical skills but needs to improve soft skills <b>- Recruiter</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_button">
+            <button class="white_button">
+                Cloes
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="blur_bgs" *ngIf="this.showHistoryPopup">
+
+</div>
+<!---------------------add history popup------------------>
+<div class="viwe_score_popup"  *ngIf="this.showHistoryPopup">
+    <div class="view_score_header">
+        <h4>Add Comment</h4>
+        <div class="score_close">
+            <span (click)="closeHistory()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_517_45917" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_517_45917)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+    </div>
+    <div class="score_bodys">
+        <div class="comment_history_body">
+            <div class="comment_button_areas">
+                <h4>Comments History</h4>
+                <div class="add_history">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M7.99967 12.6654C7.81079 12.6654 7.65256 12.6014 7.52501 12.4734C7.39701 12.3458 7.33301 12.1876 7.33301 11.9987V8.66536H3.99967C3.81079 8.66536 3.65234 8.60136 3.52434 8.47336C3.39679 8.34581 3.33301 8.18759 3.33301 7.9987C3.33301 7.80981 3.39679 7.65136 3.52434 7.52336C3.65234 7.39581 3.81079 7.33203 3.99967 7.33203H7.33301V3.9987C7.33301 3.80981 7.39701 3.65136 7.52501 3.52336C7.65256 3.39581 7.81079 3.33203 7.99967 3.33203C8.18856 3.33203 8.34701 3.39581 8.47501 3.52336C8.60256 3.65136 8.66634 3.80981 8.66634 3.9987V7.33203H11.9997C12.1886 7.33203 12.3468 7.39581 12.4743 7.52336C12.6023 7.65136 12.6663 7.80981 12.6663 7.9987C12.6663 8.18759 12.6023 8.34581 12.4743 8.47336C12.3468 8.60136 12.1886 8.66536 11.9997 8.66536H8.66634V11.9987C8.66634 12.1876 8.60256 12.3458 8.47501 12.4734C8.34701 12.6014 8.18856 12.6654 7.99967 12.6654Z" fill="#E9A400"/>
+                        </svg>
+                    </span>
+                    Add comment
+                </div>
+            </div>
+            <div class="comment_history_bodys">
+                <div class="comment-history_items">
+                    <h3>12/12/2024</h3>
+                    <p>The candidate has great technical skills but needs to improve soft skills <b>- Recruiter</b></p>
+                </div>
+                <div class="comment-history_items">
+                    <h3>12/12/2024</h3>
+                    <p>The candidate has great technical skills but needs to improve soft skills <b>- Recruiter</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_button">
+            <button class="white_button">
+                Cloes
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="blur_bgs" *ngIf="this.showHistoryPopup">
+
 </div>
