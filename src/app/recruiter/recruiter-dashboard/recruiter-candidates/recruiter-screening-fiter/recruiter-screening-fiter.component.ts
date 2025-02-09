@@ -68,4 +68,24 @@ export class RecruiterScreeningFiterComponent {
   cnd_close(){
     this.add_candidates_popup = false
   }
+
+
+
+
+  addShoInterview:boolean = false
+  addInterview() {
+    // Add interview logic here
+    this.addShoInterview = !this.addShoInterview
+  }
+  closePopupInterview(){
+    this.addShoInterview = false;
+  }
+
+  submitClient:boolean = false
+  submit_candidate(){
+    this.submitClient = !this.submitClient;
+  }
+  hideClose(){
+    this.submitClient = false
+  }
 }

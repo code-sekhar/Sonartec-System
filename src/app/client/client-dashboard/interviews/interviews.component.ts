@@ -59,4 +59,16 @@ export class InterviewsComponent {
   slide(){
     this.slideOpen = false;
   }
+
+
+
+  
+  addShoInterview:boolean = false
+  addInterview() {
+    // Add interview logic here
+    this.addShoInterview = !this.addShoInterview
+  }
+  closePopupInterview(){
+    this.addShoInterview = false;
+  }
 }

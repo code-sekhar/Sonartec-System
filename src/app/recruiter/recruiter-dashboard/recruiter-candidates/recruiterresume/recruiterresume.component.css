@@ -163,3 +163,12 @@
 .black_text{
     color: #000 !important;
 }
+
+
+@media only screen and (max-width: 666px) and (min-width: 300px) {
+
+    .inner_wraper_resume_boxs{
+        padding: 24px 10px;
+    }
+
+}

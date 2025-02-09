@@ -61,4 +61,53 @@ export class RecruiterdetailContractsComponent {
   slide(){
     this.slideOpen = false;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  showPopup:boolean = false;
+  showAddPopup:boolean = false;
+  deactivePopup:boolean = false;
+  showDialog:boolean = false;
+  showDecliendPopup:boolean = false;
+  showprofile(){
+    this.showPopup = !this.showPopup;
+  }
+  hideWidwral(){
+    this.showPopup = false;
+    this.showAddPopup = false;
+    this.deactivePopup = false;
+    this.showDecliendPopup = false;
+    this.showSendClientPopup = false;
+    this.showSendSignaturePopup = false;
+  }
+  deActivePopups(){
+    this.deactivePopup = !this.deactivePopup;
+     this.showDialog = false;
+  }
+  decliend_reasions(){
+    this.showDecliendPopup = !this.showDecliendPopup
+  }
+
+  showSendClientPopup:boolean = false
+  sendCandidate(){
+    this.showSendClientPopup = !this.showSendClientPopup
+  }
+  showSendSignaturePopup:boolean = false
+  sendSignature(){
+    this.showSendSignaturePopup = !this.showSendSignaturePopup
+  }
 }

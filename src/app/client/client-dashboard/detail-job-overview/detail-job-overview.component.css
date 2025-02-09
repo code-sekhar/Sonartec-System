@@ -696,3 +696,175 @@ a.toggle_btns {
 .wraping_over {
     padding-left: 10px;
 }
+
+/* add interview popup */
+.add_interview_popup_sections {
+    border-radius: 4px;
+    background: #FFF;
+}
+
+.add_popup_header>h3 {
+    color: var(--text-icon-primary-black, #1D2433);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+/* Headline/200/Heavy */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 116.667% */
+    letter-spacing: -0.48px;
+    margin-bottom: 0;
+}
+
+a.close_p_btn {
+    border-radius: 100px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-100, #F2F4F7);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_popup_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    width: 100%;
+}
+.addInterviewPopup {
+    width: 100%;
+}
+.custom_input>label {
+    color: var(--text-icon-primary-black, #1D2433);
+
+/* Label/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    letter-spacing: -0.08px;
+    margin-bottom: 8px;
+}
+
+.custom_input>input {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+}
+
+.custom_input>textarea {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--Neutral-0, #FFF);
+}
+
+.custom_input {
+    margin-bottom: 20px;
+}
+.add_interview_popup_sections {
+    display: flex;
+    width: 854px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px -1px 4px 2px #00000033;
+    z-index: 999;
+}
+.bg_blur {
+    background: rgba(29, 36, 51, 0.55);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+button.cancel {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--text-icon-primary-white, #FFF);
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    width: 100%;
+    line-height: 1;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 16px; */ /* 100% */
+    letter-spacing: -0.08px;
+}
+button.cancel {
+    border-radius: 4px;
+    border: 1px solid var(--Neutral-300, #DBDFE7);
+    background: var(--text-icon-primary-white, #FFF);
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    width: 100%;
+    line-height: 1;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 16px; */ /* 100% */
+    letter-spacing: -0.08px;
+}
+
+button.save_interview {
+    border-radius: 4px;
+    background: var(--Yellow-700, #FBBF23);
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--text-icon-primary-black, #1D2433);
+    text-align: center;
+
+/* Button/100 */
+    /* font-family: "Helvetica Now Text "; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    letter-spacing: -0.08px;
+    border: none;
+    width: 100%;
+}
+@media only screen and (max-width: 999px) and (min-width: 300px) {
+    .add_interview_popup_sections {
+        width: 90% ;
+    }
+    .wrap_radio.d-flex {
+        flex-wrap: wrap;
+    }
+
+}

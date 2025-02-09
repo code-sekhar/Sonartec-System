@@ -26,5 +26,18 @@ export class ScreeningCandidatesMoveStageComponent {
   }
   closeHistory(){
     this.showHistoryPopup = false
+    this.candidateHistoryPopup = false
+  }
+
+  addCommentPopup:boolean = false;
+  addComment(){
+    this.addCommentPopup = true;
+  }
+  closeComment(){
+    this.addCommentPopup = false
+  }
+  candidateHistoryPopup:boolean = false;
+  candidateHistory(){
+    this.candidateHistoryPopup = !this.candidateHistoryPopup;
   }
 }

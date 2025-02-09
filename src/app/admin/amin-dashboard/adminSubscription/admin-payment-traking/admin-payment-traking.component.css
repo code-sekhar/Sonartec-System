@@ -713,6 +713,14 @@ h4.line-height{
     line-height: unset !important;
 }
 @media only screen and (max-width: 999px) and (min-width: 300px) {
+    .widdrawl_popups {
+        width: 90%;
+        margin: auto;
+    }
+    .add_subscription{
+        width: 90%;
+        margin: auto;
+    }
     .hiring_table {
         border-radius: 4px;
         overflow-x: scroll;

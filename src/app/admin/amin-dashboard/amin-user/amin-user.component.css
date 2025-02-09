@@ -758,5 +758,7 @@ h4.line-height{
         grid-template-columns: repeat(2,2fr);
         gap: 4px;
     }
-    
+    .widdrawl_popups {
+        width: 90% !important;
+    }
 }

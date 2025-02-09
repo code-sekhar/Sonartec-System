@@ -339,4 +339,7 @@ button.confirm {
     .ss_counts_boxs.d-flex.gap-4.align-items-center {
         gap: 4px !important;
     }
+    .score_cards {
+        height: unset !important;
+    }
 }

@@ -458,3 +458,148 @@
  </div>
 
  <div class="candidare_slides_popup_bg" *ngIf="this.slideOpen"></div>
+
+
+
+
+ <!-----------------------------------add interview popup------------------>
+<div class="add_interview_popup_sections" *ngIf="this.addShoInterview">
+    <div class="addInterviewPopup">
+        <div class="add_popup_header">
+            <h3>Add New Interview</h3>
+            <a (click)="closePopupInterview()" class="close_p_btn">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_413_35799" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_413_35799)">
+                          <path d="M11.9992 13.3998L16.8992 18.2998C17.0826 18.4831 17.3159 18.5748 17.5992 18.5748C17.8826 18.5748 18.1159 18.4831 18.2992 18.2998C18.4826 18.1165 18.5742 17.8831 18.5742 17.5998C18.5742 17.3165 18.4826 17.0831 18.2992 16.8998L13.3992 11.9998L18.2992 7.0998C18.4826 6.91647 18.5742 6.68314 18.5742 6.3998C18.5742 6.11647 18.4826 5.88314 18.2992 5.6998C18.1159 5.51647 17.8826 5.4248 17.5992 5.4248C17.3159 5.4248 17.0826 5.51647 16.8992 5.6998L11.9992 10.5998L7.09922 5.6998C6.91589 5.51647 6.68255 5.4248 6.39922 5.4248C6.11588 5.4248 5.88255 5.51647 5.69922 5.6998C5.51589 5.88314 5.42422 6.11647 5.42422 6.3998C5.42422 6.68314 5.51589 6.91647 5.69922 7.0998L10.5992 11.9998L5.69922 16.8998C5.51589 17.0831 5.42422 17.3165 5.42422 17.5998C5.42422 17.8831 5.51589 18.1165 5.69922 18.2998C5.88255 18.4831 6.11588 18.5748 6.39922 18.5748C6.68255 18.5748 6.91589 18.4831 7.09922 18.2998L11.9992 13.3998Z" fill="#1D2433" fill-opacity="0.56"/>
+                        </g>
+                      </svg>
+                </span>
+            </a>
+        </div>
+        <div class="form_box">
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Time</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Model</label>
+                            <div class="wrap_radio d-flex gap-3">
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                    <label class="form-check-label" for="radio1">Onlie</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                                    <label class="form-check-label" for="radio2">Offline</label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Location/ Link</label>
+                            <input type="text" class="form-control" placeholder="Location/ Link">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="custom_input">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter Your Email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="custom_input">
+                            <label for="">Status</label>
+                            <div class="wrap_radio d-flex gap-3">
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Scheduled" name="Scheduled" value="Scheduled" checked>
+                                    <label class="form-check-label" for="radio1">Scheduled</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Scheduled" name="Scheduled" value="Scheduled">
+                                    <label class="form-check-label" for="Scheduled">Completed</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Scheduled" name="Scheduled" value="Scheduled">
+                                    <label class="form-check-label" for="Scheduled">Pending Feedback</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Scheduled" name="Scheduled" value="Scheduled">
+                                    <label class="form-check-label" for="Scheduled">Cancelled</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="Scheduled" name="Scheduled" value="Scheduled">
+                                    <label class="form-check-label" for="Scheduled">No Show</label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="custom_input">
+                            <label for="">Note</label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row_item">
+                <div class="row">
+                    <div class="col-lg-8 m-auto">
+                       <div class="row">
+                            <div class="col-lg-6">
+                                <div class="custom_btn_sections">
+                                    <button class="cancel">Cancel</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="custom_btn_sections">
+                                    <button class="save_interview">Save Interview</button>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg_blur"  *ngIf="this.addShoInterview"></div>
+

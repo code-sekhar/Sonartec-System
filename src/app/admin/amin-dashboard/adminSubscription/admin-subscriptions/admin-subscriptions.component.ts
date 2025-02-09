@@ -13,4 +13,11 @@ import { DashboardTitleComponent } from '../../../../component/dashboard-title/d
 })
 export class AdminSubscriptionsComponent {
   headingText: string = 'Subscriptions';
+  ShowSubscriptions: boolean = false;
+  addSubscriptions(){
+    this.ShowSubscriptions = !this.ShowSubscriptions;
+  }
+  closeSubscriptions(){
+    this.ShowSubscriptions = false;
+  }
 }

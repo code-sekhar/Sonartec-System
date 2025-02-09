@@ -103,7 +103,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -183,7 +183,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -272,7 +272,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -352,7 +352,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -441,7 +441,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -521,7 +521,7 @@
                                         <div class="mat_10">
                                             <div class="col-lg-12">
                                                 <div class="right_rq">
-                                                    <button class="view_rq">
+                                                    <button class="view_rq" (click)="openDialog()">
                                                         <span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                                                 <mask id="mask0_452_18573" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
@@ -555,4 +555,199 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="job_opening_popup_sections" *ngIf="this.showDialog">
+    <a class="arrows" (click)="closeDialog()">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M10.6992 17.3L15.2992 12.7C15.3992 12.6 15.4699 12.4917 15.5112 12.375C15.5532 12.2584 15.5742 12.1334 15.5742 12C15.5742 11.8667 15.5532 11.7417 15.5112 11.625C15.4699 11.5084 15.3992 11.4 15.2992 11.3L10.6992 6.70005C10.5159 6.51672 10.2826 6.42505 9.99922 6.42505C9.71589 6.42505 9.48255 6.51672 9.29922 6.70005C9.11589 6.88338 9.02422 7.11672 9.02422 7.40005C9.02422 7.68338 9.11589 7.91672 9.29922 8.10005L13.1992 12L9.29922 15.9C9.11589 16.0834 9.02422 16.3167 9.02422 16.6C9.02422 16.8834 9.11589 17.1167 9.29922 17.3C9.48255 17.4834 9.71589 17.575 9.99922 17.575C10.2826 17.575 10.5159 17.4834 10.6992 17.3Z" fill="#1D2433" fill-opacity="0.8"/>
+              </svg>
+        </span>
+    </a>
+    <div class="job_opening_header">
+        <div  class="job_over_view_header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="job_over_view_heading">
+                            <div class="heading_column">
+                                <div  class="top_heading_columns">
+                                    <h2>Senior Product Designer</h2>
+                                    <div class="button_wrapers">
+                                        <button class="success_buttons"> Full-time </button>
+                                        <button class="skay_buttons"> Open </button>
+                                    </div>
+                                </div>
+                                <div class="bottom_heading_columns">
+                                    <div class="created_date">
+                                        <h4><span>Created date:</span> Feb 20, 2022</h4>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="edit_controll_tools d-flex gap-2 align-content-center justify-content-end">
+                        <div  class="share_controll common_buttons">
+                            <a  (click)="deActivePopups()">
+                            <span  >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                                    <path d="M1.26536 11.6L12.8987 6.6133C13.4387 6.37997 13.4387 5.61997 12.8987 5.38664L1.26536 0.399971C0.825365 0.206637 0.338698 0.533304 0.338698 1.00664L0.332031 4.07997C0.332031 4.4133 0.578698 4.69997 0.912031 4.73997L10.332 5.99997L0.912031 7.2533C0.578698 7.29997 0.332031 7.58664 0.332031 7.91997L0.338698 10.9933C0.338698 11.4666 0.825365 11.7933 1.26536 11.6Z" fill="#1D2433"/>
+                                  </svg>
+                            </span> Submit Request </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="job_opening_details">
+         <!--------------------job-details----------------->
+         <div class="job_details">
+            <div class="inner_job_details">
+                <div class="job_details_header">
+                    <h4>Job Details</h4>
+                </div>
+                <div class="job_details_body">
+                    <div class="item_rows">
+                        <div class="d-flex justify-content-between">
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Target Date</h4>
+                                    <h3>12/12/2024</h3>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Deportement</h4>
+                                    <h3>Design</h3>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Experiences</h4>
+                                    <h3>5 Years +</h3>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Salary</h4>
+                                    <h3>$10.000</h3>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Job Type</h4>
+                                    <h3>Full-time</h3>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Location</h4>
+                                    <div class="locations d-flex align-content-center gap-2">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                <mask id="mask0_134_7298" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
+                                                  <rect x="0.5" width="20" height="20" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_134_7298)">
+                                                  <path d="M10.5002 10.0001C10.9585 10.0001 11.351 9.83675 11.6777 9.51008C12.0038 9.18397 12.1668 8.79175 12.1668 8.33342C12.1668 7.87508 12.0038 7.48258 11.6777 7.15591C11.351 6.8298 10.9585 6.66675 10.5002 6.66675C10.0418 6.66675 9.64961 6.8298 9.3235 7.15591C8.99683 7.48258 8.8335 7.87508 8.8335 8.33342C8.8335 8.79175 8.99683 9.18397 9.3235 9.51008C9.64961 9.83675 10.0418 10.0001 10.5002 10.0001ZM10.5002 18.0209C10.3891 18.0209 10.2779 18.0001 10.1668 17.9584C10.0557 17.9167 9.9585 17.8612 9.87516 17.7917C7.84738 16.0001 6.3335 14.337 5.3335 12.8026C4.3335 11.2676 3.8335 9.83342 3.8335 8.50008C3.8335 6.41675 4.50377 4.75703 5.84433 3.52091C7.18433 2.2848 8.73627 1.66675 10.5002 1.66675C12.2641 1.66675 13.816 2.2848 15.156 3.52091C16.4966 4.75703 17.1668 6.41675 17.1668 8.50008C17.1668 9.83342 16.6668 11.2676 15.6668 12.8026C14.6668 14.337 13.1529 16.0001 11.1252 17.7917C11.0418 17.8612 10.9446 17.9167 10.8335 17.9584C10.7224 18.0001 10.6113 18.0209 10.5002 18.0209Z" fill="#FBBF23"/>
+                                                </g>
+                                              </svg>
+                                        </span>
+                                        <h3>Ha Noi, Viet Nam</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="colst">
+                                <div class="item_details_for_job">
+                                    <h4>Recruitment Quotas</h4>
+                                    <h3>150</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq_sections">
+        <div class="faq_main_sections">
+            <div class="wraping" *ngFor="let faq of faqs; let i = index" class="faq-item">
+                <div class="faq_wrapers items">
+                    <div class="inner_faq_sections">
+                        <div class="faq_headers"   (click)="toggleFAQ(i)">
+                            <h4>
+                                {{faq.question }}
+                            </h4>
+                            <span class="faq_icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M11.9997 14.95C11.8664 14.95 11.7414 14.929 11.6247 14.887C11.508 14.8456 11.3997 14.775 11.2997 14.675L6.6747 10.05C6.49136 9.86664 6.40403 9.63731 6.4127 9.36198C6.4207 9.08731 6.51636 8.85831 6.6997 8.67498C6.88303 8.49164 7.11636 8.39998 7.3997 8.39998C7.68303 8.39998 7.91636 8.49164 8.0997 8.67498L11.9997 12.575L15.9247 8.64998C16.108 8.46664 16.3374 8.37898 16.6127 8.38698C16.8874 8.39564 17.1164 8.49164 17.2997 8.67498C17.483 8.85831 17.5747 9.09164 17.5747 9.37498C17.5747 9.65831 17.483 9.89164 17.2997 10.075L12.6997 14.675C12.5997 14.775 12.4914 14.8456 12.3747 14.887C12.258 14.929 12.133 14.95 11.9997 14.95Z" fill="#1D2433" fill-opacity="0.8"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="faq_descriptions"  *ngIf="faq.isVisible"  >
+                            <div class="inner_descriptions">
+                                <p>
+                                    As a Senior Product Designer, you will closely collaborate with our Product and Engineering teams to deliver intuitive, elegant, and effective user experiences. You will be in charge of the entire design process—from conducting user research and creating wireframes to producing high-fidelity mockups and prototypes. Additionally, you will play a strategic role in guiding design direction to enhance product value and brand identity. Key responsibilities include:Gather and analyze user feedback through interviews, surveys, and observational studies. Use these insights to deeply understand user needs, goals, and challenges.As a Senior Product Designer, you will closely collaborate with our Product and Engineering teams to deliver intuitive, elegant, and effective user experiences. You will be in charge of the entire design process—from conducting user research and creating wireframes to producing high-fidelity mockups and prototypes. Additionally, you will play a strategic role in guiding design direction to enhance product value and brand identity. Key responsibilities include:Gather and analyze user feedback through interviews, surveys, and observational studies. Use these insights to deeply understand user needs, goals, and challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+       
+    </div>
+</div>
+
+
+<div class="bg_blur" *ngIf="this.showDialog">
+
+</div>
+
+
+<div class="widdrawl_popups"  *ngIf="this.deactivePopup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Submit Request Confirmation</h4>
+            <span (click)="hideWidwral()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <h4 class="line-height">Are you sure you want to submit a request for <b>Senior Product Designer?</b><br>
+                            You can track its status in the <b>'Requests'</b> section after submission
+                        </h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm delete_con">
+                                Confirm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.deactivePopup">
+
 </div>

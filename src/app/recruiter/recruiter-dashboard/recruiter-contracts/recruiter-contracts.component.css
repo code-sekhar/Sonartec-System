@@ -511,3 +511,19 @@ button.btn.btn-ct.hidden {
     background: var(--Cyan-700, #1094BE) !important;
     color: #fff !important;
 }
+
+
+@media only screen and (max-width: 666px) and (min-width: 300px) {
+.row_cs {
+    display: grid;
+    display: grid !important;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 14px;
+}
+
+.button_rows {
+    display: grid !important;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 14px;
+}
+}

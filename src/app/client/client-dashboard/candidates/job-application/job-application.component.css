@@ -544,4 +544,21 @@ button.open_time {
 .hiring-pipeline-wrapers ::-webkit-scrollbar-thumb:hover {
   background: #fabb1c; 
 }
+.candidate_areas_score {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.candidate_header {
+    text-align: center;
+}
+
+.score_column_boxs {
+    width: 100% !important;
+    text-align: center;
+}
+
+.score_column_boxs>h1 {
+    text-align: center !important;
+}
 }

@@ -1,18 +1,18 @@
 <div class="dash_board_wrapers">
     <div class="headers_sections">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-7">
                 <dashboard-title [text]="headingText" ></dashboard-title>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-5">
                 <div class="add_job">
-                    <button >
+                    <button (click)="addSubscriptions()">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <path d="M6 9.5C5.85833 9.5 5.73967 9.452 5.644 9.356C5.548 9.26033 5.5 9.14167 5.5 9V6.5H3C2.85833 6.5 2.7395 6.452 2.6435 6.356C2.54783 6.26033 2.5 6.14167 2.5 6C2.5 5.85833 2.54783 5.7395 2.6435 5.6435C2.7395 5.54783 2.85833 5.5 3 5.5H5.5V3C5.5 2.85833 5.548 2.7395 5.644 2.6435C5.73967 2.54783 5.85833 2.5 6 2.5C6.14167 2.5 6.2605 2.54783 6.3565 2.6435C6.45217 2.7395 6.5 2.85833 6.5 3V5.5H9C9.14167 5.5 9.26033 5.54783 9.356 5.6435C9.452 5.7395 9.5 5.85833 9.5 6C9.5 6.14167 9.452 6.26033 9.356 6.356C9.26033 6.452 9.14167 6.5 9 6.5H6.5V9C6.5 9.14167 6.45217 9.26033 6.3565 9.356C6.2605 9.452 6.14167 9.5 6 9.5Z" fill="#1D2433"/>
                             </svg>
                         </span>
-                        Add User
+                        Add Subscription
                     </button>
                 </div>
             </div>
@@ -45,3 +45,102 @@
     </div>
 </div>
 </div>
+
+<!------------------------------add subscription------------------>
+<div class="add_subscription" *ngIf="this.ShowSubscriptions">
+    <div class="inner_subscriptions_areas">
+        <div class="subscription_headers">
+            <h4>Subscription Details</h4>
+            <a (click)="closeSubscriptions()" class="subscription_close">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_517_51274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_517_51274)">
+                          <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                        </g>
+                      </svg>
+                </span>
+            </a>
+        </div>
+        <div class="sub_list_wrapers">
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Subscription ID</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>SUB1234</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Customer Name</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>John Doe</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Plan Name</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Premium Plan</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Type</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Monthly</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Status</h4>
+                </div>
+                <div class="list_ans">
+                    <span class="ct_badge">
+                        Active
+                    </span>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Start Date</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>12/01/2024</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Expiry Date</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>12/01/2025</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Revenue</h4>
+                </div>
+                <div class="list_ans">
+                    <span class="badgess">
+                        $500
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="close_wrapers">
+            <button class="cancel_form">
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg_blur" *ngIf="this.ShowSubscriptions"></div>
