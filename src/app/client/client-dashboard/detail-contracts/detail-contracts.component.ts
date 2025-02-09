@@ -60,4 +60,26 @@ export class DetailContractsComponent {
   slide(){
     this.slideOpen = false;
   }
+
+
+
+  ShowSubscriptions: boolean = false;
+  Contract(){
+    this.ShowSubscriptions = !this.ShowSubscriptions;
+  }
+  closeSubscriptions(){
+    this.ShowSubscriptions = false;
+    this.showSignIn = false;
+    this.showReview = false
+  }
+  showSignIn:boolean = false;
+  sendSign(){
+    this.showSignIn = !this.showSignIn
+  }
+
+showReview:boolean = false;
+
+  sendReview(){
+    this.showReview = !this.showReview;
+  }
 }

@@ -62,4 +62,14 @@ export class RequestsComponent {
   slide(){
     this.slideOpen = false;
   }
+
+  ShowviewInterview:boolean = false;
+
+  viewInterview(){
+    this.ShowviewInterview = !this.ShowviewInterview
+  }
+  closePopup(){
+    this.ShowviewInterview = false;
+  }
+
 }

@@ -691,4 +691,13 @@ button.save_interview {
 .hiring-pipeline-wrapers ::-webkit-scrollbar-thumb:hover {
   background: #fabb1c; 
 }
+.add_interview_popup_sections {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.custom_btn_sections {
+    margin-bottom: 10px;
+    /* display: flex; */
+}
 }

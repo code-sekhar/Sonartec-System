@@ -48,7 +48,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="edit_controll_tools d-flex gap-2 align-content-center justify-content-end">
                         <div class="edit_controll common_buttons">
-                            <a href="">
+                            <a (click)="Contract()">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <path d="M6.36642 11.7166C6.27753 11.7166 6.1942 11.7026 6.11642 11.6746C6.03865 11.647 5.96642 11.5999 5.89976 11.5333L3.03309 8.6666C2.91087 8.54438 2.85242 8.38593 2.85776 8.19127C2.86353 7.99705 2.92753 7.83882 3.04976 7.7166C3.17198 7.59438 3.32753 7.53327 3.51642 7.53327C3.70531 7.53327 3.86087 7.59438 3.98309 7.7166L6.36642 10.0999L12.0164 4.44993C12.1386 4.32771 12.2971 4.2666 12.4918 4.2666C12.686 4.2666 12.8442 4.32771 12.9664 4.44993C13.0886 4.57216 13.1498 4.73038 13.1498 4.9246C13.1498 5.11927 13.0886 5.27771 12.9664 5.39994L6.83309 11.5333C6.76642 11.5999 6.6942 11.647 6.61642 11.6746C6.53865 11.7026 6.45531 11.7166 6.36642 11.7166Z" fill="white"/>
@@ -58,7 +58,7 @@
                             </a>
                         </div>
                         <div class="delete_controll common_buttons">
-                            <a href="">
+                            <a (click)="sendReview()">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <path d="M2.26683 13.6003L13.9002 8.61367C14.4402 8.38034 14.4402 7.62034 13.9002 7.387L2.26683 2.40034C1.82683 2.207 1.34016 2.53367 1.34016 3.007L1.3335 6.08034C1.3335 6.41367 1.58016 6.70034 1.9135 6.74034L11.3335 8.00034L1.9135 9.25367C1.58016 9.30034 1.3335 9.587 1.3335 9.92034L1.34016 12.9937C1.34016 13.467 1.82683 13.7937 2.26683 13.6003Z" fill="#1D2433"/>
@@ -68,7 +68,7 @@
                             </a>
                         </div>
                         <div class="share_controll common_buttons">
-                            <a href="">
+                            <a (click)="sendSign()">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <path d="M4 14.6663C3.44444 14.6663 2.97222 14.4719 2.58333 14.083C2.19444 13.6941 2 13.2219 2 12.6663V11.9997C2 11.633 2.13056 11.3191 2.39167 11.058C2.65278 10.7969 2.96667 10.6663 3.33333 10.6663H4V2.66634C4 2.29967 4.13056 1.98579 4.39167 1.72467C4.65278 1.46356 4.96667 1.33301 5.33333 1.33301H12.6667C13.0333 1.33301 13.3472 1.46356 13.6083 1.72467C13.8694 1.98579 14 2.29967 14 2.66634V12.6663C14 13.2219 13.8056 13.6941 13.4167 14.083C13.0278 14.4719 12.5556 14.6663 12 14.6663H4ZM12 13.333C12.1889 13.333 12.3472 13.2691 12.475 13.1413C12.6028 13.0136 12.6667 12.8552 12.6667 12.6663V2.66634H5.33333V10.6663H10C10.3667 10.6663 10.6806 10.7969 10.9417 11.058C11.2028 11.3191 11.3333 11.633 11.3333 11.9997V12.6663C11.3333 12.8552 11.3972 13.0136 11.525 13.1413C11.6528 13.2691 11.8111 13.333 12 13.333ZM6.66667 5.99967C6.47778 5.99967 6.31944 5.93579 6.19167 5.80801C6.06389 5.68023 6 5.5219 6 5.33301C6 5.14412 6.06389 4.98579 6.19167 4.85801C6.31944 4.73023 6.47778 4.66634 6.66667 4.66634H11.3333C11.5222 4.66634 11.6806 4.73023 11.8083 4.85801C11.9361 4.98579 12 5.14412 12 5.33301C12 5.5219 11.9361 5.68023 11.8083 5.80801C11.6806 5.93579 11.5222 5.99967 11.3333 5.99967H6.66667ZM6.66667 7.99967C6.47778 7.99967 6.31944 7.93579 6.19167 7.80801C6.06389 7.68023 6 7.5219 6 7.33301C6 7.14412 6.06389 6.98579 6.19167 6.85801C6.31944 6.73023 6.47778 6.66634 6.66667 6.66634H11.3333C11.5222 6.66634 11.6806 6.73023 11.8083 6.85801C11.9361 6.98579 12 7.14412 12 7.33301C12 7.5219 11.9361 7.68023 11.8083 7.80801C11.6806 7.93579 11.5222 7.99967 11.3333 7.99967H6.66667ZM4 13.333H10V11.9997H3.33333V12.6663C3.33333 12.8552 3.39722 13.0136 3.525 13.1413C3.65278 13.2691 3.81111 13.333 4 13.333ZM4 13.333H3.33333H10H4Z" fill="white"/>
@@ -223,3 +223,279 @@
  </div>
 
  <div class="candidare_slides_popup_bg" *ngIf="this.slideOpen"></div>
+
+
+
+
+ 
+<!------------------------------add subscription------------------>
+<div class="add_subscription" *ngIf="this.ShowSubscriptions">
+    <div class="inner_subscriptions_areas">
+        <div class="subscription_headers">
+            <h4>Accept Contract</h4>
+            <a (click)="closeSubscriptions()" class="subscription_close">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_517_51274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_517_51274)">
+                          <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                        </g>
+                      </svg>
+                </span>
+            </a>
+        </div>
+        <div class="sub_list_wrapers">
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Contract ID</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>CON12345</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Job Title</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Senior Product Designer</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Candidate</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Sarah Tran</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Salary</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>$10,000</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Start Date</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>01/01/2025</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Status</h4>
+                </div>
+                <div class="list_ans">
+                    <span class="ct_badge d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <ellipse cx="6" cy="6" rx="3" ry="3" fill="#1B5E20"/>
+                          </svg>
+                          Signed
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bg_boards">
+            <h4>Confirmation</h4>
+            <p>By accepting this contract, you confirm that all details are correct and the contract will proceed to the next stage.</p>
+        </div>
+        <div class="close_wrapers w-100 d-flex gap-2">
+            <button class="cancel_form">
+                Cancel
+            </button>
+            <button class="cancel_form accept">
+                Accept Contract
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="bg_blur" *ngIf="this.ShowSubscriptions"></div>
+
+
+  <!------------------------------signIn------------------>
+<div class="add_subscription" *ngIf="this.showSignIn">
+    <div class="inner_subscriptions_areas">
+        <div class="subscription_headers">
+            <h4>Sign Contract</h4>
+            <a (click)="closeSubscriptions()" class="subscription_close">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_517_51274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_517_51274)">
+                          <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                        </g>
+                      </svg>
+                </span>
+            </a>
+        </div>
+        <div class="sub_list_wrapers">
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Contract ID</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>CON12345</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Job Title</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Senior Product Designer</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Candidate</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Sarah Tran</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Salary</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>$10,000</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Start Date</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>01/01/2025</h4>
+                </div>
+            </div>
+      
+            
+        </div>
+        <div class="bg_boards">
+            <h4 class="d-flex align-items-center gap-2 mb-0">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.61236 0H8.63035L13.7308 5.31635V15.6567C13.7308 16.952 12.6828 18 11.392 18H2.61236C1.31702 18 0.269043 16.952 0.269043 15.6567V2.34332C0.26902 1.04797 1.31699 0 2.61236 0Z" fill="#E5252A"/>
+                        <path opacity="0.302" fill-rule="evenodd" clip-rule="evenodd" d="M8.62549 0V5.27586H13.7304L8.62549 0Z" fill="white"/>
+                        <path d="M2.87305 13.4304V10.1426H4.27185C4.61818 10.1426 4.89255 10.237 5.09945 10.4304C5.30634 10.6193 5.4098 10.8757 5.4098 11.1951C5.4098 11.5144 5.30634 11.7708 5.09945 11.9597C4.89255 12.1531 4.61818 12.2475 4.27185 12.2475H3.71413V13.4304H2.87305ZM3.71413 11.5324H4.1774C4.30333 11.5324 4.40228 11.5054 4.46976 11.4425C4.53722 11.384 4.57322 11.303 4.57322 11.1951C4.57322 11.0871 4.53724 11.0062 4.46976 10.9477C4.40231 10.8847 4.30335 10.8578 4.1774 10.8578H3.71413V11.5324ZM5.7561 13.4304V10.1426H6.92102C7.1504 10.1426 7.3663 10.1741 7.56869 10.2415C7.77108 10.309 7.95551 10.4035 8.11741 10.5339C8.27934 10.6598 8.40977 10.8307 8.50422 11.0466C8.59417 11.2625 8.64366 11.5099 8.64366 11.7888C8.64366 12.0631 8.5942 12.3105 8.50422 12.5264C8.40977 12.7423 8.27934 12.9132 8.11741 13.0391C7.95548 13.1696 7.77108 13.264 7.56869 13.3315C7.3663 13.3989 7.1504 13.4304 6.92102 13.4304H5.7561ZM6.57919 12.7153H6.82207C6.9525 12.7153 7.07394 12.7018 7.18638 12.6703C7.29432 12.6388 7.39778 12.5894 7.49673 12.5219C7.59119 12.4544 7.66765 12.36 7.72162 12.234C7.77559 12.1081 7.80258 11.9597 7.80258 11.7888C7.80258 11.6133 7.77559 11.4649 7.72162 11.339C7.66765 11.2131 7.59119 11.1186 7.49673 11.0511C7.39778 10.9837 7.29434 10.9342 7.18638 10.9027C7.07394 10.8712 6.9525 10.8577 6.82207 10.8577H6.57919V12.7153ZM9.06645 13.4304V10.1426H11.4053V10.8577H9.90753V11.384H11.1039V12.0946H9.90753V13.4304H9.06645Z" fill="white"/>
+                      </svg>
+                </span>
+                PDF Viewer - Contract content</h4>
+            
+        </div>
+        <div class="close_wrapers w-100 d-flex gap-2">
+            <button class="cancel_form">
+                Cancel
+            </button>
+            <button class="cancel_form conSign">
+                Confirm and Sign
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="bg_blur" *ngIf="this.showSignIn"></div>
+
+
+  <!----------------------------send_back_review--------------------->
+  <!------------------------------add subscription------------------>
+<div class="add_subscription" *ngIf="this.showReview">
+    <div class="inner_subscriptions_areas">
+        <div class="subscription_headers">
+            <h4>Send Back for Review</h4>
+            <a (click)="closeSubscriptions()" class="subscription_close">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_517_51274" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_517_51274)">
+                          <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                        </g>
+                      </svg>
+                </span>
+            </a>
+        </div>
+        <div class="sub_list_wrapers">
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Contract ID</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>CON12345</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Job Title</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Senior Product Designer</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Candidate</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>Sarah Tran</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Salary</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>$10,000</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Start Date</h4>
+                </div>
+                <div class="list_ans">
+                    <h4>01/01/2025</h4>
+                </div>
+            </div>
+            <div class="s_list_iitems">
+                <div class="list_title">
+                    <h4>Status</h4>
+                </div>
+                <div class="list_ans">
+                    <span class="ct_badge under_revieew">
+                        Under Review
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="message">
+            <label>Reason for Review</label>
+            <textarea name="" id="" class="form-control"></textarea>
+        </div>
+        <div class="close_wrapers w-100 d-flex gap-2">
+            <button class="cancel_form">
+                Cancel
+            </button>
+            <button class="cancel_form send_rv">
+                Send Back for Review
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="bg_blur" *ngIf="this.showReview"></div>

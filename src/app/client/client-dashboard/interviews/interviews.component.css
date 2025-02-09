@@ -586,6 +586,15 @@ button.save_interview {
 }
 @media only screen and (max-width: 999px) and (min-width: 300px) {
     .add_interview_popup_sections {
+        height: 90%;
+        overflow-y: scroll;
+    }
+    
+    .custom_btn_sections {
+        margin-bottom: 10px;
+        /* display: flex; */
+    }
+    .add_interview_popup_sections {
         width: 90% ;
     }
     .wrap_radio.d-flex {

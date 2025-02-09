@@ -69,7 +69,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -99,7 +99,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -135,7 +135,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -165,7 +165,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -201,7 +201,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -231,7 +231,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -297,7 +297,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -327,7 +327,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -363,7 +363,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -393,7 +393,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -429,7 +429,7 @@
                                                                       </div>
                                                                     </div>
                                                                     <div class="user_column">
-                                                                      <div class="user_title">
+                                                                      <div class="user_titles">
                                                                         <h4>Sarah Tran</h4>
                                                                         <h5>hao-sonia92gmail.com</h5>
                                                                       </div>
@@ -459,7 +459,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <div class="table_wraping_column end_box">
-                                                                <button class="view_btn">
+                                                                <button class="view_btn" (click)="viewInterview()">
                                                                     <span>
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                             <mask id="mask0_328_3342" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
@@ -493,4 +493,83 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-----------------------------view popup------------------>
+
+
+<div class="view_popup_sections" *ngIf="this.ShowviewInterview">
+    <div class="inner_wrapers">
+        <div class="user_container">
+            <div class="user_detail">
+                <div class="user_image">
+                    <img src="assets/img/g.png" alt="">
+                </div>
+                <div class="user_title">
+                    <h4>John Doe</h4>
+                    <h5>hao-sonia92gmail.com</h5>
+                </div>
+            </div>
+            <div class="user_control_button_wraper">
+                <button class="decline_btn" (click)="closePopup()">Decline</button>
+                <button class="accept_btn">Apccept</button>
+            </div>
+        </div>
+        <div class="combo_box mt-3">
+            <div class="bar_card_wrapers">
+                <h4>Job Information</h4>
+                <div class="bar_card_row">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="column_wraprs">
+                                <h4>Job Title</h4>
+                                <h5>Senior Product Designer</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column_wraprs">
+                                <h4>Request Date</h4>
+                                <h5>15/12/2024</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="column_wraprs">
+                                <h4>Status</h4>
+                                <span class="in_p_badge">
+                                    In Progress
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------next------------------->
+            <div class="bar_card_wrapers">
+                <h4>Request Message</h4>
+                <div class="bar_card_row">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="column_wraprs">
+
+                                <h5>I have extensive experience recruiting for roles like this. My network includes| |   hundreds of candidates who fit your requirements</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------comment-box---------------------->
+        <div class="comment_box_wrapers mt-3">
+            <label for="">Comment</label>
+            <textarea name="" id="" class="form-control" placeholder="Content"></textarea>
+        </div>
+        <div class="send_wraper mt-3">
+            <button>
+                Send
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg_blur"  *ngIf="this.ShowviewInterview">
+
 </div>

@@ -866,5 +866,15 @@ button.save_interview {
     .wrap_radio.d-flex {
         flex-wrap: wrap;
     }
-
+    .edit_controll_tools.d-flex.gap-2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .top_heading_columns>h2 {
+        font-size: 20px;
+    }
+    .candidare_slides_popup {
+        width: 98%;
+    }
 }
