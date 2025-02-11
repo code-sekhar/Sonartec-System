@@ -39,17 +39,17 @@
                 <div class="col-lg-6 col-12">
                     <div class="edit_controll_tools d-flex gap-2 align-content-center justify-content-end">
                         <div class="edit_controll common_buttons">
-                            <a href="">
+                            <a (click)="close_candidates()">
                                 Close Job
                             </a>
                         </div>
                         <div class="delete_controll common_buttons">
-                            <a href="">
+                            <a (click)="deleteJob()">
                                 Delete Job
                             </a>
                         </div>
                         <div class="share_controll common_buttons">
-                            <a href="">
+                            <a (click)="assignRecruiter()">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <path d="M7.99935 8.0013C7.26602 8.0013 6.63824 7.74019 6.11602 7.21797C5.59379 6.69575 5.33268 6.06797 5.33268 5.33464C5.33268 4.6013 5.59379 3.97352 6.11602 3.4513C6.63824 2.92908 7.26602 2.66797 7.99935 2.66797C8.73268 2.66797 9.36046 2.92908 9.88268 3.4513C10.4049 3.97352 10.666 4.6013 10.666 5.33464C10.666 6.06797 10.4049 6.69575 9.88268 7.21797C9.36046 7.74019 8.73268 8.0013 7.99935 8.0013ZM3.99935 13.3346C3.63268 13.3346 3.3189 13.2042 3.05802 12.9433C2.79668 12.682 2.66602 12.368 2.66602 12.0013V11.468C2.66602 11.0902 2.76335 10.7429 2.95802 10.426C3.15224 10.1095 3.41046 9.86797 3.73268 9.7013C4.42157 9.35686 5.12157 9.09841 5.83268 8.92597C6.54379 8.75397 7.26602 8.66797 7.99935 8.66797C8.73268 8.66797 9.4549 8.75397 10.166 8.92597C10.8771 9.09841 11.5771 9.35686 12.266 9.7013C12.5882 9.86797 12.8465 10.1095 13.0407 10.426C13.2353 10.7429 13.3327 11.0902 13.3327 11.468V12.0013C13.3327 12.368 13.2022 12.682 12.9413 12.9433C12.68 13.2042 12.366 13.3346 11.9993 13.3346H3.99935ZM3.99935 12.0013H11.9993V11.468C11.9993 11.3457 11.9689 11.2346 11.908 11.1346C11.8467 11.0346 11.766 10.9569 11.666 10.9013C11.066 10.6013 10.4605 10.3762 9.84935 10.226C9.23824 10.0762 8.62157 10.0013 7.99935 10.0013C7.37713 10.0013 6.76046 10.0762 6.14935 10.226C5.53824 10.3762 4.93268 10.6013 4.33268 10.9013C4.23268 10.9569 4.15224 11.0346 4.09135 11.1346C4.03002 11.2346 3.99935 11.3457 3.99935 11.468V12.0013ZM7.99935 6.66797C8.36602 6.66797 8.68002 6.5373 8.94135 6.27597C9.20224 6.01508 9.33268 5.7013 9.33268 5.33464C9.33268 4.96797 9.20224 4.65419 8.94135 4.3933C8.68002 4.13197 8.36602 4.0013 7.99935 4.0013C7.63268 4.0013 7.3189 4.13197 7.05802 4.3933C6.79668 4.65419 6.66602 4.96797 6.66602 5.33464C6.66602 5.7013 6.79668 6.01508 7.05802 6.27597C7.3189 6.5373 7.63268 6.66797 7.99935 6.66797Z" fill="#1D2433"/>
@@ -448,3 +448,126 @@
  </div>
 
  <div class="candidare_slides_popup_bg" *ngIf="this.slideOpen"></div>
+ <!------------------------------popup sections------------------>
+ <!-------------------------Close Job Confirmation------------------>
+<div class="widdrawl_popups"  *ngIf="this.showCandidateClosed">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Close Job Confirmation</h4>
+            <span (click)="hidepopup()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <h4 class="line-height">Are you sure you want to close this job? It will no longer be available for new applications.</h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm">
+                                Confirm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showCandidateClosed">
+
+</div>
+
+<!-----------------------Delete Job Confirmation------------------>
+
+<div class="widdrawl_popups"  *ngIf="this.showDeletePoupup">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Delete Job Confirmation</h4>
+            <span (click)="hidepopup()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <h4 class="line-height">Are you sure you want to delete this job permanently? This action cannot be undone.</h4>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showDeletePoupup">
+
+</div>
+<!---------------------------------assign job ---------------------------->
+
+<div class="widdrawl_popups"  *ngIf="this.showassignRecruiter">
+    <div class="inner_widdrawl_popups">
+        <div class="widdrawl_header">
+            <h4>Assign Recruiter</h4>
+            <span (click)="hidepopup()" class="close_buttons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <mask id="mask0_413_40780" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_413_40780)">
+                      <path d="M11.9992 13.4008L16.8992 18.3008C17.0826 18.4841 17.3159 18.5758 17.5992 18.5758C17.8826 18.5758 18.1159 18.4841 18.2992 18.3008C18.4826 18.1174 18.5742 17.8841 18.5742 17.6008C18.5742 17.3174 18.4826 17.0841 18.2992 16.9008L13.3992 12.0008L18.2992 7.10078C18.4826 6.91745 18.5742 6.68411 18.5742 6.40078C18.5742 6.11745 18.4826 5.88411 18.2992 5.70078C18.1159 5.51745 17.8826 5.42578 17.5992 5.42578C17.3159 5.42578 17.0826 5.51745 16.8992 5.70078L11.9992 10.6008L7.09922 5.70078C6.91589 5.51745 6.68255 5.42578 6.39922 5.42578C6.11588 5.42578 5.88255 5.51745 5.69922 5.70078C5.51589 5.88411 5.42422 6.11745 5.42422 6.40078C5.42422 6.68411 5.51589 6.91745 5.69922 7.10078L10.5992 12.0008L5.69922 16.9008C5.51589 17.0841 5.42422 17.3174 5.42422 17.6008C5.42422 17.8841 5.51589 18.1174 5.69922 18.3008C5.88255 18.4841 6.11588 18.5758 6.39922 18.5758C6.68255 18.5758 6.91589 18.4841 7.09922 18.3008L11.9992 13.4008Z" fill="#1D2433" fill-opacity="0.56"/>
+                    </g>
+                  </svg>
+            </span>
+        </div>
+        <div class="widdrawl_body">
+                <div class="view_profile_wrapers">
+                    <div class="view_profile_items border-0">
+                        <select name="" id="" class="form-select">
+                            <option value="">Select a recruiter to assign this job</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="widdrawl_btns_section">
+                    <div class="inner_widdrwl">
+                        <div class="d-flex align-items-center gap-8">
+                            <button class="cancel_form">Cancel</button>
+                            <button class="confirm ">
+                                Assign
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                
+    </div>
+</div>
+<div class="bg_blur" *ngIf="this.showassignRecruiter">
+
+</div>

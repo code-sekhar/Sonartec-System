@@ -545,3 +545,36 @@ button.open_time {
   background: #fabb1c; 
 }
 }
+
+@media only screen and (max-width: 668px) and (min-width: 300px) {
+    .right_slide_buttons {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    button.sent_sect {
+        align-items: center;
+        justify-content: center;
+    }
+    .wrape_dtl_row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .candidate_areas_score {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .seniorProductDesigner {
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        margin-top: 10px;
+        align-items: start;
+    }
+    .job_details {
+        padding: 6px;
+    }
+}

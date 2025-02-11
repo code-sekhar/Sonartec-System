@@ -29,6 +29,8 @@ export class AminUserComponent {
     this.showPopup = false;
     this.showAddPopup = false;
     this.deactivePopup = false;
+    this.showreasetPopup = false;
+    this.showActivePopup = false;
   }
   //add user
   addUsers(){
@@ -36,5 +38,14 @@ export class AminUserComponent {
   }
   deActivePopups(){
     this.deactivePopup = !this.deactivePopup;
+  }
+  //reset password
+  showreasetPopup:boolean = false;
+  reasetPopups(){
+    this.showreasetPopup = !this.showreasetPopup;
+  }
+  showActivePopup:boolean = false;
+  activePopups(){
+    this.showActivePopup = !this.showActivePopup;
   }
 }

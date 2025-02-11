@@ -65,4 +65,22 @@ export class AdminDetailjobOverviewComponent {
   slide(){
     this.slideOpen = false;
   }
+  //candidate popup
+  showCandidateClosed:boolean = false
+  close_candidates(){
+    this.showCandidateClosed = !this.showCandidateClosed
+  }
+  hidepopup(){
+    this.showCandidateClosed = false;
+    this.showDeletePoupup= false;
+    this.showassignRecruiter = false;
+  }
+  showDeletePoupup:boolean = false
+  deleteJob(){
+    this.showDeletePoupup = !this.showDeletePoupup
+  }
+  showassignRecruiter:boolean = false
+  assignRecruiter(){
+    this.showassignRecruiter = !this.showassignRecruiter;
+  }
 }

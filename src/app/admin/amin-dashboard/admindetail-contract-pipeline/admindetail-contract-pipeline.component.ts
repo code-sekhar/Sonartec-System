@@ -61,4 +61,28 @@ export class AdmindetailContractPipelineComponent {
   slide(){
     this.slideOpen = false;
   }
+
+
+
+
+
+
+    //candidate popup
+    showCandidateClosed:boolean = false
+    deleteContract(){
+      this.showCandidateClosed = !this.showCandidateClosed
+    }
+    hidepopup(){
+      this.showCandidateClosed = false;
+      this.showDeletePoupup= false;
+      this.showassignRecruiter = false;
+    }
+    showDeletePoupup:boolean = false
+    confirmSignature(){
+      this.showDeletePoupup = !this.showDeletePoupup
+    }
+    showassignRecruiter:boolean = false
+    sendContract(){
+      this.showassignRecruiter = !this.showassignRecruiter;
+    }
 }

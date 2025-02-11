@@ -70,4 +70,11 @@ export class RecruiterInterviewsComponent {
   closePopupInterview(){
     this.addShoInterview = false;
   }
+  showDetlInterView = false;
+  showDetailInterview() {
+    this.showDetlInterView = !this.showDetlInterView;
+  }
+  closeDtl(){
+    this.showDetlInterView = false
+  }
 }
